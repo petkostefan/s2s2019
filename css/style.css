@@ -140,19 +140,19 @@ body {
   /* position: absolute; */
   /* left: 42%; */
   font-size: 1.3em;
-  color: white;
   font-weight: 400;
   border-radius:4px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #ffa600;
+  background: transparent;
+  color: #ffa600;
 	border:1.5px solid #ffa600;
   transform: translate(0,87vh);
 }
 
 .prijava:hover{
-  color: #ffa600;
-  background: transparent;
+  color: white;
+  background-color: #ffa600;
   transition: 0.25s;
 }
 
