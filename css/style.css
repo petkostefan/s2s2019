@@ -211,7 +211,80 @@ input:checked + label span:last-child {
 #projekat h3 {
   padding-bottom: 30px;
 }
+/********************** A G E N D A *************************/
+#agenda {
+  background-color: #E8EFF5;
+}
+.cd-timeline {
+}
+.cd-timeline h2 {
+  padding-top: 15px;
+  font-size: 20px;
+}
+.cd-timeline__content{
+  padding: 0;
+}
+.text-component{
+  padding: 0;
+  padding-left: 20px;
+  color: white;
+}
+.cd-timeline__img--picture {
+  color: white;
+}
+.orange{
+  background-color: #FAA830;
+}
+.blue {
+  background-color: #005D89;
+}
+.agenda-btn-container div {
+  margin-top: 40px;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.subota, .nedelja {
+  background-color: white;
+}
+.display-none {
+  display: none;
+}
+.subota.active-agenda-btn, .nedelja.active-agenda-btn, .subota:hover, .nedelja:hover {
+  background-color: #FAA830;
+  color: white;
+  transition: 0.3s;
+}
+#raspored {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 
+#raspored td, #raspored th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#raspored tr:nth-child(even){background-color: #f2f2f2;}
+
+#raspored tr:hover {background-color: #ddd;}
+
+#raspored th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #005D89;
+  color: white;
+}
+.margin-top-agenda {
+  margin-top: 100px;
+  padding-top: 30px;
+}
+/*************************************************************/
 @media only screen and (max-width: 768px) {
   .menu {
     display: none;

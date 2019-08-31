@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-agenda.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>S2S | Studenti studentima</title>
 </head>
 
@@ -116,7 +119,249 @@
     </div>
 
     <div id="agenda">
-
+        <h2 class="text-center margin-top-agenda">Agenda</h2>
+        <div class="agenda-btn-container text-center">
+            <div class="subota active-agenda-btn">Subota</div>
+            <div class="nedelja">Nedelja</div>
+        </div>
+        <section id="subota" class="cd-timeline js-cd-timeline">
+            <div class="container max-width-lg cd-timeline__container">
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture orange">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Check in subota</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">15 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture blue">
+                    9:45
+                  </div><!-- cd-timeline__img -->
+            
+                    <div class="cd-timeline__content text-component">
+                      <h2>Otvaranje</h2>
+                      <div class="flex justify-between items-center">
+                        <span class="cd-timeline__date">30 min</span>
+                      </div>
+                    </div> <!-- cd-timeline__content -->
+                  </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture orange">
+                    9:45
+                  </div><!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Rad</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">1h 30min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture blue">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Pauza I</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">30 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture orange">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Rad</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">1h 30 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture blue">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Pauza II</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">30 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture orange">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Rad</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">1h</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture blue">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Zatvaranje</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">30 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+                <div></div>
+              </div>
+          </section> <!-- cd-timeline -->
+          <section id="nedelja" class="cd-timeline js-cd-timeline display-none">
+            <div class="container max-width-lg cd-timeline__container">
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture orange">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Check in NEDELJA</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">15 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture blue">
+                    9:45
+                  </div><!-- cd-timeline__img -->
+            
+                    <div class="cd-timeline__content text-component">
+                      <h2>Otvaranje</h2>
+                      <div class="flex justify-between items-center">
+                        <span class="cd-timeline__date">30 min</span>
+                      </div>
+                    </div> <!-- cd-timeline__content -->
+                  </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture orange">
+                    9:45
+                  </div><!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Rad</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">1h 30min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture blue">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Pauza I</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">30 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture orange">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Rad</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">1h 30 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture blue">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Pauza II</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">30 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture orange">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Rad</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">1h</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+          
+                <div class="cd-timeline__block">
+                  <div class="cd-timeline__img cd-timeline__img--picture blue">
+                    9:45
+                  </div> <!-- cd-timeline__img -->
+          
+                  <div class="cd-timeline__content text-component">
+                    <h2>Zatvaranje</h2>
+                    <div class="flex justify-between items-center">
+                      <span class="cd-timeline__date">30 min</span>
+                    </div>
+                  </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+                <div></div>
+              </div>
+          </section> <!-- cd-timeline -->
+          <table id="raspored">
+            <tr>
+              <th>Radionica</th>
+              <th>Sala</th>
+            </tr>
+            <tr>
+              <td>Javascript</td>
+              <td>111</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>222</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>222</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>222</td>
+            </tr>
+          </table>
     </div>
 
     <div id="radionice">
@@ -134,8 +379,8 @@
     <footer id="kontakt">
 
     </footer>
-
-
+    <script src="js/agenda.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 
 </html>
