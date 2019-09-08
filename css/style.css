@@ -322,20 +322,30 @@ body {
 }
 
 .popup {
-  display: none;
+  display: none; 
+  position: fixed;
+  top: 12vh;
+  left: 10vw;
+  width: 80vw;
+  height: 38vw; 
   justify-content: center;
-  width: 900px;
-  height: 400px;
   background-color:  rgb(108, 170, 199);
-  position: fixed; /* or absolute */
-  top: 100px;
-  left: 200px;
   border: 2px solid #ffa600;
+  border-radius: 2px;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+#popup.show {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .popupphoto {
-  width: 200px;
-  height: 400px;
+  width: 20vw;
+  height: 35vw;
   float: left;
   background:  rgb(60, 175, 228);
 
@@ -351,6 +361,8 @@ body {
   height: 15px;
   padding-left: 850px;
 }
+
+
 
 /*Kraj - Popup radionice */
 
