@@ -334,7 +334,7 @@
           <div class="box">
             <div class="radionica_ikona_2">
                 <a class="radionica">
-                  <img src="/img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona">
+                  <img src="img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona">
                 </a>
             </div>
             <div class="tekst">
@@ -352,7 +352,7 @@
           <div class="box">
             <div class="radionica_ikona_2">
                 <a class="radionica">
-                  <img src="/img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona">
+                  <img src="img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona">
                 </a>
             </div>
             <div class="tekst">
@@ -370,7 +370,7 @@
           <div class="box">
             <div class="radionica_ikona_2">
                 <a class="radionica">
-                  <img src="/img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona">
+                  <img src="img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona">
                 </a>
             </div>
             <div class="tekst">
@@ -388,7 +388,7 @@
           <div class="box">
             <div class="radionica_ikona_2">
                 <a class="radionica">
-                  <img src="/img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona">
+                  <img src="img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona">
                 </a>
             </div>
             <div class="tekst">
@@ -409,7 +409,7 @@
               <div class="col-3">
                  <div class="box">
                      <div class="radionica_ikona_2">
-                          <a class="radionica"><img src="/img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona"></a>
+                          <a class="radionica"><img src="img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona"></a>
                       </div>
                           <div class="tekst">
                                   <h2>Radionica</h2>
@@ -426,7 +426,7 @@
               <div class="col-3">
                       <div class="box">
                           <div class="radionica_ikona_2">
-                               <a class="radionica"><img src="/img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona"></a>
+                               <a class="radionica"><img src="img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona"></a>
                            </div>
                                <div class="tekst">
                                        <h2>Radionica</h2>
@@ -442,7 +442,7 @@
                    <div class="col-3">
                           <div class="box">
                               <div class="radionica_ikona_2">
-                                   <a class="radionica"><img src="/img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona"></a>
+                                   <a class="radionica"><img src="img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona"></a>
                                </div>
                                    <div class="tekst">
                                            <h2>Radionica</h2>
@@ -458,7 +458,7 @@
                        <div class="col-3">
                               <div class="box">
                                   <div class="radionica_ikona_2">
-                                       <a class="radionica"><img src="/img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona"></a>
+                                       <a class="radionica"><img src="img/radionica_icon.png" alt="radionica_icon" class="radionica_ikona"></a>
                                    </div>
                                        <div class="tekst">
                                                <h2>Radionica</h2>
@@ -475,10 +475,10 @@
           <div class="popup" id="popup">
               <div class="popupspace">
                 <div class="popupphoto">
-                    <img src="/img/radionica_icon.png" alt="">
+                    <img src="img/radionica_icon.png" alt="">
                 </div>
                 <div class="popuptext">
-                    <button onclick="closePopup()" class="close"><img src="/img/close.png" alt="" id="close"></button>
+                    <button onclick="closePopup()" class="close"><img src="img/close.png" alt="" id="close"></button>
 
                     <h1>Radionica</h1>
                     <p>
@@ -512,13 +512,13 @@
               document.getElementById("popup").style.display = "block";
               const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
               const body = document.body;
-              body.style.position = 'fixed';
+              body.style.overflow = 'hidden';
               body.style.top = `-${scrollY}`;
           };
           const closePopup = () => {
             const body = document.body;
             const scrollY = body.style.top;
-            body.style.position = '';
+            body.style.overflow = 'initial';
             body.style.top = '';
             window.scrollTo(0, parseInt(scrollY || '0') * -1);
             document.getElementById("popup").style.display = "none";
