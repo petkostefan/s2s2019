@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto";
-
 }
 
 .header {
@@ -9,11 +8,17 @@ body {
   z-index: 5;
   display: flex;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   height: 70px;
   text-shadow: 2px 2px 4px #005d89;
-  background-image: linear-gradient(180deg, rgba(0,93,137, 1),rgba(0,93,137, 0.9),rgba(0,93,137, 0.6), transparent);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 93, 137, 1),
+    rgba(0, 93, 137, 0.9),
+    rgba(0, 93, 137, 0.6),
+    transparent
+  );
 }
 
 .header ul {
@@ -25,7 +30,7 @@ body {
   justify-content: center;
 }
 
-.header img{
+.header img {
   padding-top: 1.3em;
   max-width: 150px;
 }
@@ -52,7 +57,7 @@ body {
   position: absolute;
   bottom: -2px;
   left: 0;
-  content: '';
+  content: "";
   width: 0;
   height: 1px;
   transition: all 0.2s linear;
@@ -127,7 +132,7 @@ body {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/s2sCover.jpg);
+  background-image: url("../img/s2sCover.jpg");
   background-size: cover;
   background-position: center;
   /* color:white; */
@@ -135,22 +140,41 @@ body {
   text-align: center;
 }
 
-.prijava{
+.prijava {
   /* margin: auto; */
   /* position: absolute; */
   /* left: 42%; */
   font-size: 1.3em;
   font-weight: 400;
-  border-radius:4px;
+  border-radius: 4px;
   padding-left: 15px;
   padding-right: 15px;
   background: transparent;
   color: #ffa600;
-	border:1.5px solid #ffa600;
-  transform: translate(0,87vh);
+  border: 1.5px solid #ffa600;
+  transform: translate(0, 87vh);
 }
 
-.prijava:hover{
+.prijava:hover {
+  color: white;
+  background-color: #ffa600;
+  transition: 0.25s;
+}
+
+.prijava-btn {
+  font-size: 1.3em;
+  /* font-weight: 400; */
+  border-radius: 4px;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: transparent;
+  color: #ffa600;
+  border: 1.5px solid #ffa600;
+  /* transform: translate(0, 87vh); */
+}
+
+.prijava-btn:hover {
   color: white;
   background-color: #ffa600;
   transition: 0.25s;
@@ -166,60 +190,67 @@ body {
 
 .radionica_ikona {
   height: 50px;
-  width: 100px; 
+  width: 100px;
 }
 
 .radionica {
   position: absolute;
   top: 51%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  color:transparent;
+  transform: translate(-50%, -50%);
+  color: transparent;
   text-decoration: none;
   border: 2px solid transparent;
   text-align: center;
   line-height: 45px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .radionica:before {
-  content: '';
-  width:  100%;
+  content: "";
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   border: 3px solid transparent;
   transform: rotate(0deg);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.radionica:after
- {
-  content: '';
-  width:  100%;
+.radionica:after {
+  content: "";
+  width: 100%;
   height: 100%;
   position: absolute;
   top: -2px;
   left: 0px;
   border: 3px solid transparent;
   transform: rotate(0deg);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /*KRAJ SESTOUGAO IKONICE ZA RADIONICE*/
 
 /*POCETAK KARTICE ZA RADIONICE*/
 
+.box {
+  color: rgb(207, 207, 207);
+  text-align: justify;
+}
+
+.box h2 {
+  color: white;
+}
+
 .radionice_drugi_red {
   position: relative;
   z-index: 0;
-  height: 350px;
+  height: 380px;
   margin: 50px auto;
 }
 
-.radionice_drugi_red 
-.box {
+.radionice_drugi_red .box {
   position: relative;
   /* background: #f99c1c; */
   box-sizing: border-box;
@@ -227,61 +258,50 @@ body {
   border-radius: 10px;
 }
 
-.radionice_drugi_red 
-.box,
+.radionice_drugi_red .box,
 .radionica_ikona_2 {
   position: relative;
   margin-top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgb(0,93,137)  ;
+  background: rgb(0, 93, 137);
   transition: 0.5s;
   z-index: 2;
 }
 
-.radionice_drugi_red 
-.box:hover
-.radionica_ikona_2 {
+.radionice_drugi_red .box:hover .radionica_ikona_2 {
   top: 55px;
   left: 12px;
   height: 30px;
-  width: 200px; 
+  width: 200px;
   /* border-radius: 50%; */
 }
 
-.radionice_drugi_red 
-.box:hover
-.radionica{
-  border: 3px solid rgb(248,154,28);
+.radionice_drugi_red .box:hover .radionica {
+  border: 3px solid rgb(248, 154, 28);
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
 }
 
-.radionice_drugi_red 
-.box:hover
-.radionica:before{
+.radionice_drugi_red .box:hover .radionica:before {
   transform: rotate(120deg);
-  border: 3px solid rgb(248,154,28);
+  border: 3px solid rgb(248, 154, 28);
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
 }
 
-.radionice_drugi_red 
-.box:hover
-.radionica:after{
+.radionice_drugi_red .box:hover .radionica:after {
   transform: rotate(-120deg);
-  border: 3px solid rgb(248,154,28);
+  border: 3px solid rgb(248, 154, 28);
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
 }
 
-.radionice_drugi_red
-.box
-.tekst {
+.radionice_drugi_red .box .tekst {
   position: absolute;
   height: 250px;
-  top:100%;
+  top: 100%;
   padding: 10px;
   text-align: center;
   box-sizing: border-box;
@@ -289,10 +309,8 @@ body {
   opacity: 0;
 }
 
-.radionice_drugi_red
-.box:hover
-.tekst {
-  top:130px;
+.radionice_drugi_red .box:hover .tekst {
+  top: 130px;
   opacity: 1;
   font-size: 15px;
 }
@@ -301,20 +319,20 @@ body {
 
 /*Pocetak - Popup radionice */
 
-.vidijos{
+.vidijos {
   position: relative;
   font-size: 1.1em;
   font-weight: 300;
-  border-radius:4px;
+  border-radius: 4px;
   background: transparent;
   color: #ffa600;
-	border:1.5px solid #ffa600;
+  border: 1.5px solid #ffa600;
   top: 10px;
   padding: 5px;
   text-decoration: none;
 }
 
-.vidijos:hover{
+.vidijos:hover {
   color: white;
   text-decoration: none;
   background-color: #ffa600;
@@ -322,14 +340,14 @@ body {
 }
 
 .popup {
-  display: none; 
+  display: none;
   position: fixed;
   top: 12vh;
   left: 10vw;
   width: 80vw;
-  height: 38vw; 
+  height: 38vw;
   justify-content: center;
-  background-color:  rgb(108, 170, 199);
+  background-color: rgb(108, 170, 199);
   border: 2px solid #ffa600;
   border-radius: 2px;
   padding: 10px;
@@ -347,8 +365,7 @@ body {
   width: 20vw;
   height: 35vw;
   float: left;
-  background:  rgb(60, 175, 228);
-
+  background: rgb(60, 175, 228);
 }
 .popuptext {
   font-size: 0.6em;
@@ -361,8 +378,6 @@ body {
   height: 15px;
   padding-left: 850px;
 }
-
-
 
 /*Kraj - Popup radionice */
 
@@ -415,15 +430,20 @@ input:checked + label span:last-child {
 
 #projekat {
   padding-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-size: 20px;
+  color: #636363;
 }
 
-#projekat h3 {
+#projekat h2 {
   padding-bottom: 30px;
 }
+
 /********************** A G E N D A *************************/
 #agenda {
-  background-color: #E8EFF5;
+  background-color: #e8eff5;
+  padding-bottom: 45px;
 }
 .cd-timeline {
 }
@@ -431,10 +451,10 @@ input:checked + label span:last-child {
   padding-top: 15px;
   font-size: 20px;
 }
-.cd-timeline__content{
+.cd-timeline__content {
   padding: 0;
 }
-.text-component{
+.text-component {
   padding: 0;
   padding-left: 20px;
   color: white;
@@ -442,11 +462,11 @@ input:checked + label span:last-child {
 .cd-timeline__img--picture {
   color: white;
 }
-.orange{
-  background-color: #FAA830;
+.orange {
+  background-color: #faa830;
 }
 .blue {
-  background-color: #005D89;
+  background-color: #005d89;
 }
 .agenda-btn-container div {
   margin-top: 40px;
@@ -454,14 +474,18 @@ input:checked + label span:last-child {
   display: inline-block;
   cursor: pointer;
 }
-.subota, .nedelja {
+.subota,
+.nedelja {
   background-color: white;
 }
 .display-none {
   display: none;
 }
-.subota.active-agenda-btn, .nedelja.active-agenda-btn, .subota:hover, .nedelja:hover {
-  background-color: #FAA830;
+.subota.active-agenda-btn,
+.nedelja.active-agenda-btn,
+.subota:hover,
+.nedelja:hover {
+  background-color: #faa830;
   color: white;
   transition: 0.3s;
 }
@@ -474,41 +498,87 @@ input:checked + label span:last-child {
   transform: translateX(-50%);
 }
 
-#raspored td, #raspored th {
+#raspored td,
+#raspored th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#raspored tr:nth-child(even){background-color: #f2f2f2;}
+#raspored tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-#raspored tr:hover {background-color: #ddd;}
+#raspored tr:hover {
+  background-color: #ddd;
+}
 
 #raspored th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #005D89;
+  background-color: #005d89;
   color: white;
 }
 .margin-top-agenda {
   margin-top: 100px;
   padding-top: 80px;
 }
+
+/*footer*/
+
+footer {
+  background-color: #005d89;
+  height: 450px;
+  padding-bottom: 30px;
+  color: rgb(230, 230, 230);
+  font-size: 18px;
+}
+
+#kontakt h3 {
+  padding-bottom: 10px;
+  padding-top: 30px;
+  color: white;
+}
+
+#kontakt a {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+}
+
+#kontakt a:hover {
+  color: #f99c1c;
+}
+
+#kontakt i {
+  margin-right: 8px;
+}
+
+#kontakt .kontakt-tekst {
+  padding-left: 180px;
+}
+
+.map iframe {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 0;
+  height: 440px;
+  width: 50vw;
+}
+
 /*************************************************************/
 @media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
+  footer {
+    height: 862px;
   }
 
-  .menu-fonis {
-    display: none;
+  #kontakt .kontakt-tekst {
+    padding-left: 30px;
+    padding-bottom: 30px;
   }
 
-  .menu-phone {
-    display: initial;
-  }
-
-  .menu-phone .navbar-brand img {
-    max-width: 120px;
+  .map iframe {
+    margin-right: 0;
+    width: 100vw;
   }
 }
