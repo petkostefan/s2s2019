@@ -11,7 +11,7 @@ body {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  height: 75px;
+  height: 70px;
   text-shadow: 2px 2px 4px #005d89;
   background-image: linear-gradient(180deg, rgba(0,93,137, 1),rgba(0,93,137, 0.9),rgba(0,93,137, 0.6), transparent);
 }
@@ -213,6 +213,7 @@ body {
 
 .radionice_drugi_red {
   position: relative;
+  z-index: 0;
   height: 350px;
   margin: 50px auto;
 }
@@ -236,8 +237,7 @@ body {
   height: 100%;
   background: rgb(0,93,137)  ;
   transition: 0.5s;
-  z-index: 1;
-
+  z-index: 2;
 }
 
 .radionice_drugi_red 
@@ -296,8 +296,75 @@ body {
   opacity: 1;
   font-size: 15px;
 }
+
 /*KRAJ KARTICE ZA RADIONICE*/
 
+/*Pocetak - Popup radionice */
+
+.vidijos{
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 300;
+  border-radius:4px;
+  background: transparent;
+  color: #ffa600;
+	border:1.5px solid #ffa600;
+  top: 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.vidijos:hover{
+  color: white;
+  text-decoration: none;
+  background-color: #ffa600;
+  transition: 0.25s;
+}
+
+.popup {
+  display: none; 
+  position: fixed;
+  top: 12vh;
+  left: 10vw;
+  width: 80vw;
+  height: 38vw; 
+  justify-content: center;
+  background-color:  rgb(108, 170, 199);
+  border: 2px solid #ffa600;
+  border-radius: 2px;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+#popup.show {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.popupphoto {
+  width: 20vw;
+  height: 35vw;
+  float: left;
+  background:  rgb(60, 175, 228);
+
+}
+.popuptext {
+  font-size: 0.6em;
+  padding: 20px;
+  padding-left: 220px;
+}
+
+.close {
+  width: 15px;
+  height: 15px;
+  padding-left: 850px;
+}
+
+
+
+/*Kraj - Popup radionice */
 
 /* MENI ZA TELEFON */
 input label {
@@ -425,7 +492,7 @@ input:checked + label span:last-child {
 }
 .margin-top-agenda {
   margin-top: 100px;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 /*************************************************************/
 @media only screen and (max-width: 768px) {
