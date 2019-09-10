@@ -182,6 +182,10 @@ body {
 
 /*Radionice*/
 
+#radionice {
+  padding-top: 40px;
+}
+
 /*POCETAK SESTOUGAO IKONICE ZA RADIONICE*/
 .radionice_prvi_red {
   margin-top: 10%;
@@ -239,6 +243,10 @@ body {
   text-align: justify;
 }
 
+#radionice .col-md-3 {
+  margin-bottom: 30px;
+}
+
 .box h2 {
   color: white;
 }
@@ -247,11 +255,10 @@ body {
   position: relative;
   z-index: 0;
   height: 380px;
-  margin: 50px auto;
 }
 
 .radionice_drugi_red .box {
-  position: relative;
+  /* position: relative; */
   /* background: #f99c1c; */
   box-sizing: border-box;
   overflow: hidden;
@@ -272,7 +279,7 @@ body {
 
 .radionice_drugi_red .box:hover .radionica_ikona_2 {
   top: 55px;
-  left: 12px;
+  left: 23px;
   height: 30px;
   width: 200px;
   /* border-radius: 50%; */
@@ -554,6 +561,7 @@ footer {
 }
 
 #kontakt .kontakt-tekst {
+  padding-top: 20px;
   padding-left: 180px;
 }
 
@@ -568,6 +576,22 @@ footer {
 
 /*************************************************************/
 @media only screen and (max-width: 768px) {
+  .radionice_drugi_red .box:hover .radionica_ikona_2 {
+    top: 55px;
+    left: 68px;
+    height: 20px;
+    width: 200px;
+    /* border-radius: 50%; */
+  }
+
+  #radionice {
+    height: 1890px;
+  }
+
+  .radionice_drugi_red .box {
+    height: 330px;
+  }
+
   footer {
     height: 862px;
   }
