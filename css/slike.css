@@ -1,0 +1,37 @@
+.mediji img{
+    max-width:  200px;
+    max-height: 200px;
+}
+
+.mediji{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.partneri img{
+    max-width:  200px;
+    max-height: 200px;
+}
+
+.glide img{
+    max-width:  200px;
+    max-height: 200px;
+}
+.partneri{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.glide{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-right: 0x;
+    margin-left: 20px;
+}
+#partneri h2{
+    text-align: center;
+    margin-bottom: 0px;
+}
