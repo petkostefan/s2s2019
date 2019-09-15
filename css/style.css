@@ -149,15 +149,15 @@ body {
   border-radius: 4px;
   padding-left: 15px;
   padding-right: 15px;
-  background: transparent;
-  color: #ffa600;
+  background-color: #ffa600;
+  color: white;
   border: 1.5px solid #ffa600;
-  transform: translate(0, 87vh);
+  transform: translate(0, 89vh);
 }
 
 .prijava:hover {
-  color: white;
-  background-color: #ffa600;
+  color: #ffa600;
+  background: transparent;
   transition: 0.25s;
 }
 
