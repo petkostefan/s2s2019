@@ -447,8 +447,6 @@ body {
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-
-
 #popup.show {
   align-items: center;
   display: flex;
@@ -484,9 +482,42 @@ body {
   border: 7px solid #f79257; /*Border linija je fiks za scrollbar da ne izlazi van popupa*/
 }
 
-#progresivneWebApp {
-  background-color:  #61f38d;
-  border: 7px solid #61f38d; 
+#introToJava {
+  background-color:  #eb2b50;
+  border: 7px solid #eb2b50; 
+}
+
+#realTimeDataProcessing {
+  background-color:  #23395b;
+  border: 7px solid #23395b; 
+}
+#introToGraphicDesign {
+  background-color:  #4da1a9;
+  border: 7px solid #4da1a9; 
+}
+#webAppWorkshop {
+  background-color:  #839439;
+  border: 7px solid #839439; 
+}
+#vueIsForYou {
+  background-color:  #94374f;
+  border: 7px solid #94374f; 
+}
+#sweetGit {
+  background-color:  #cc5b28;
+  border: 7px solid #cc5b28; 
+}
+#introToDjango {
+  background-color:  #bf90c1;
+  border: 7px solid #bf90c1; 
+}
+#introToC {
+  background-color:  #706e61;
+  border: 7px solid #706e61; 
+}
+#krozBazuDoJave {
+  background-color:  #915c83;
+  border: 7px solid #915c83; 
 }
 
 /* Scroll popup radionice - dizajn */

@@ -29,16 +29,94 @@ const closeDataScience101 = () => {
     document.getElementById("dataScience101").style.display = "none";	            
 }	
 
-// Uvod u progresivne veb aplikacije
+// Real Time Data Processing
 
-const openProgresivneWebApp = () => {	          
-  document.getElementById("progresivneWebApp").style.display = "block";	              	              
+const openRealTimeDataProcessing = () => {	          
+  document.getElementById("realTimeDataProcessing").style.display = "block";	              	              
   open();      
 };	  
 
-const closeProgresivneWebApp = () => {	          
+const closeRealTimeDataProcessing = () => {	          
   close();
-  document.getElementById("progresivneWebApp").style.display = "none";	            
+  document.getElementById("realTimeDataProcessing").style.display = "none";	            
 }	
 
-// WebApp Workshop
+// Intro To Graphic Design
+
+const openIntroToGraphicDesign = () => {	          
+  document.getElementById("introToGraphicDesign").style.display = "block";	              	              
+  open();      
+};	  
+
+const closeIntroToGraphicDesign = () => {	          
+  close();
+  document.getElementById("introToGraphicDesign").style.display = "none";	            
+}
+
+// Web App Workshop
+
+const openWebAppWorkshop = () => {	          
+  document.getElementById("webAppWorkshop").style.display = "block";	              	              
+  open();      
+};	  
+
+const closeWebAppWorkshop = () => {	          
+  close();
+  document.getElementById("webAppWorkshop").style.display = "none";	            
+}
+
+// Vue Is For You
+
+const openVueIsForYou = () => {	          
+  document.getElementById("vueIsForYou").style.display = "block";	              	              
+  open();      
+};	  
+
+const closeVueIsForYou = () => {	          
+  close();
+  document.getElementById("vueIsForYou").style.display = "none";	            
+}
+// Sweet Git
+
+const openSweetGit = () => {	          
+  document.getElementById("sweetGit").style.display = "block";	              	              
+  open();      
+};	  
+
+const closeSweetGit = () => {	          
+  close();
+  document.getElementById("sweetGit").style.display = "none";	            
+}
+// Intro To Django
+
+const openIntroToDjango = () => {	          
+  document.getElementById("introToDjango").style.display = "block";	              	              
+  open();      
+};	  
+
+const closeIntroToDjango = () => {	          
+  close();
+  document.getElementById("introToDjango").style.display = "none";	            
+}
+// Intro To C
+
+const openIntroToC = () => {	          
+  document.getElementById("introToC").style.display = "block";	              	              
+  open();      
+};	  
+
+const closeIntroToC = () => {	          
+  close();
+  document.getElementById("introToC").style.display = "none";	            
+}
+// Kroz Bazu Do Jave
+
+const openKrozBazuDoJave = () => {	          
+  document.getElementById("krozBazuDoJave").style.display = "block";	              	              
+  open();      
+};	  
+
+const closeKrozBazuDoJave = () => {	          
+  close();
+  document.getElementById("krozBazuDoJave").style.display = "none";	            
+}
