@@ -763,7 +763,7 @@ footer {
 
 /*************************************************************/
 @media only screen and (max-width: 768px) {
-  .radionice_red .kartica:hover .sestougao {
+.kartica:hover .sestougao {
     top: 55px;
     left: 15%;
     height: 20px;
@@ -775,9 +775,13 @@ footer {
     height: 1890px;
   } */
 
-  .radionice_red .kartica {
+ .kartica {
     height: 100%;
   } 
+
+  .kartica .tekst{
+    text-align: center;
+  }
 
   footer {
     height: 862px;
