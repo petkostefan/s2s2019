@@ -29,6 +29,18 @@ const closeDataScience101 = () => {
     document.getElementById("dataScience101").style.display = "none";	            
 }	
 
+// Intro To Java
+
+const openIntroToJava = () => {	          
+  document.getElementById("introToJava").style.display = "block";	  
+  open();            	                 
+};	  
+
+const closeIntroToJava = () => {	       
+  close();   
+  document.getElementById("introToJava").style.display = "none";	            
+}	
+
 // Real Time Data Processing
 
 const openRealTimeDataProcessing = () => {	          
