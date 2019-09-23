@@ -385,6 +385,11 @@ body {
 
 /*Pocetak - Popup */
 
+@keyframes zum {
+  from { transform: scale(0);}
+  to { transform: scale(1);}
+}
+
 .popup {
   display: none; 
   position: fixed;
@@ -398,6 +403,8 @@ body {
   padding: 10px;
   text-align: center;
   z-index: 1;
+  animation-name: zum;
+  animation-duration: 0.5s;
 }
 
 .popup_levo{

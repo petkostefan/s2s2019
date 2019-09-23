@@ -20,7 +20,7 @@ function close(){
 // Data Science 101
 
 const openDataScience101 = () => {	          
-    document.getElementById("dataScience101").style.display = "block";	  
+    document.getElementById("dataScience101").style.display = "block"; 
     open();            	                 
 };	  
 
