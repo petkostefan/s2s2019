@@ -447,7 +447,6 @@ body {
 .popupphoto {
   width: 20vw;
   height: 35vw;
-  float: left;
   left: 0px;
   padding-top: 15px;
   padding-right: 20px;
@@ -800,4 +799,8 @@ footer {
 
 #particles-js {
   height: 100%;
+}
+
+.popupphoto {
+  width: 100%;
 }
