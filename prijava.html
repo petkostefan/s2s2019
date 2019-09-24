@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="shortcut icon" type="image/png" href="/img/favicon-03.png" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/prijava.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <title>Prijava</title>
+</head>
+
+<body>
+
+    <h1>Prijava za S2S</h1>
+
+    <form name="submit-to-google-sheet">
+            <div class="forma">
+                <h2>Naziv tima:</h2>
+                <input id="aaa" name="naziv-tima" type="text" class="form-control aaa">
+                <h2>Kako ste saznali za FON Hakaton?</h2>
+                <textarea id="aaa" name="kako-ste-saznali" class="form-control aaa" rows="3"></textarea>
+                <h2>Da li ste učestvovali na sličnim takmičenjima? Ukoliko jeste, navedite na kojim i ukratko opišite
+                    iskustvo.</h2>
+                <textarea id="aaa" name="iskustvo" class="form-control" rows="3"></textarea>
+                <h2>Zašto ste se prijavili za FON Hakaton?</h2>
+                <textarea id="aaa" name="zasto-ste-se-prijavili" class="form-control aaa" rows="4"></textarea>
+                <h2>Navedite ključnu prednost i manu tima:</h2>
+                <textarea id="aaa" name="prednost-mana" class="form-control aaa" rows="3"></textarea>
+                <h2>CV-jeve vašeg tima ubacite na drive (google drive, onedrive i sl.) i unesite link tog drive-a u
+                    naredno polje.</h2>
+                <input name="link-za-cv" type="text" class="form-control aaa">
+            </div>
+            
+        <h4>Svi članovi tima prihvataju da se njihovi podaci čuvaju u internoj bazi projekta i da postoji
+            mogućnost da se oni proslede kompaniji "Saga", koja je ovogodišnji partner projekta.</h4>
+        <button id="dugme" type="submit" class="form-control submit" onclick="prijava();">POTVRDI</button>
+        <h1 id="potvrda"></h1>
+        <br><br>
+
+    </form>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="PrijaveHakaton.js"></script>
+    <script>
+
+        function potvrda() {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxgH_Xq8de0HcJXcIGQgc8PqAEDzfhfFnNWLrZrLLU_c_zkAV9A/exec'
+            const form = document.forms['submit-to-google-sheet']
+            form.addEventListener("submit", e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+            })
+        }
+
+        function prijava() {
+            var gotovo = true;
+            var list = document.querySelectorAll('.aaa');
+            for (var element of list) {
+                if (element.value == "") {
+                    gotovo = false;
+                    break;
+                }
+            }
+            if (gotovo) {
+                potvrda();
+                document.getElementById('dugme').style.display = 'none'
+
+                Swal.fire({
+                    text: 'Uspešno ste se prijavili!',
+                    type: 'success',
+                    confirmButtonText: 'Ok'
+                })
+            }
+            else {
+                event.preventDefault();
+
+                Swal.fire({
+                    text: 'Niste popunili sva polja!',
+                    type: 'error',
+                    confirmButtonText: 'Ok'
+                })
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

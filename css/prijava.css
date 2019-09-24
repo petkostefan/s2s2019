@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Roboto";
+    background: 
+    radial-gradient(       
+        rgba(0, 93, 137),
+        rgba(0, 93, 137)
+    );
+}
+
+textarea {
+    resize: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Roboto";
+}
+
+h1{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: #ffa600;
+}
+
+
+h4 {
+    color: #ffa600;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.form-control
+{
+    width: 600px;
+    background-color: #ffa600b9;
+    outline: none;
+    border: 1px solid #ffa600;
+    color: #fff;
+    font-size: 18px;
+}
+
+input
+{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form .submit
+{
+    background-color: #ffa600;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+form .submit:hover
+{
+    color: #ffa600;
+    background-color: transparent;
+    border: 1.5px solid #ffa600;
+    transition: 0.25s;
+}
+
+h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 0px;
+}
+
+::placeholder {
+    color: #ffa600;
+    font-family: "Roboto";
+}
+
+.forma {
+    width: 625px;
+    text-align: left;
+    margin: auto;
+}
+
+@media (max-width: 650px){
+
+.content{
+    width: 300px;
+    padding: 0%;
+    margin: auto;
+}
+
+h1{
+    font-size: 25px;
+}
+
+h2{
+    width: 300px;
+    font-size: 17px;
+}
+
+.form-control, input{
+    width: 285px;
+    font-size: 15px;
+    height: 30px;
+    padding: 5px;
+}
+
+.collapsible, .submit {
+    width: 300px;
+    font-size: 17px;
+    padding: 10px;;
+}
+
+h3{
+    font-size: 15px;
+}
+
+}
