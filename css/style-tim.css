@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: "montserrat";
+  font-family: "Roboto";
 }
 .team-section{
 
@@ -16,9 +16,7 @@ body{
 }
 .team-section h2{
   font-size: 20px;
-  text-transform: uppercase;
   display: inline-block;
-  border-bottom: 4px solid;
   padding-bottom: 10px;
 }
 .pe{
@@ -34,12 +32,13 @@ body{
   height: 120px;
 }
 .p-name{
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .p-des{
+  font-size: 15px;
 }
 .p-sm{
-  margin-top: 12px;
+  margin-top: 7px;
 }
 .p-sm a{
   margin: 0 4px;
