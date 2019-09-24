@@ -434,7 +434,7 @@ body {
   text-align: justify;
   float:left;
   overflow-y: auto;
-  height: 75vh;
+  height: 79vh;
   min-width: 50vw;
 }
 
@@ -835,6 +835,22 @@ footer {
   .deveta {
     display: none;
   }
+
+  .popup_desno{
+    height: 40vh;
+    border-left: none;
+    border-top: 3px solid white;
+  }
+
+
+  .popupphoto img {
+    padding-left: 30%;
+    height: 100px;
+  }
+  
+  .predavac, .predavaci {
+    margin-left: 25%;
+  }
 }
 
 #particles-js {
@@ -845,23 +861,10 @@ footer {
   height: 85vh;
 }
 
-.popupphoto {
-  width: 100%;
-  min-height: 40vh;
-}
+  .popupphoto {
+    width: 100%;
+    min-height: 40vh;
+  }
 
-.popupphoto img {
-  padding-left: 30%;
-  height: 100px;
-}
 
-.popup_desno{
-  height: 40vh;
-  border-left: none;
-  border-top: 3px solid white;
-}
-
-.predavac, .predavaci {
-  margin-left: 25%;
-}
 
