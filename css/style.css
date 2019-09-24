@@ -381,6 +381,9 @@ body {
   transition: 0.25s;
 }
 
+.deveta {
+  display: block;
+}
 /*Kraj - Kartice*/
 
 /*Pocetak - Popup */
@@ -829,6 +832,10 @@ footer {
     margin-right: 0;
     width: 100vw;
   }
+
+  .deveta {
+    display: none;
+  }
 }
 
 #particles-js {
@@ -858,3 +865,4 @@ footer {
 .predavac, .predavaci {
   margin-left: 25%;
 }
+
