@@ -7,7 +7,6 @@
     margin-top: 100px;
     margin-bottom: 0px;
     margin-right: 0px;
-    
 }
 
 .partneri img{
@@ -29,12 +28,21 @@
     margin-top: 50px;
     margin-bottom: 0px;
     margin-right: 0x;
-   
 }
-#partneri h2{
+.part h2{
+    
     text-align: center;
     margin-bottom: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 10px ;
+    padding-bottom: 10px;
 }
 .part{
     padding-left: 4%;
 }
+
+
+ 
+     
+    

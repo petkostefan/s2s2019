@@ -4,17 +4,17 @@ body{
   font-family: "montserrat";
 }
 .team-section{
-  background: #f1f1f1;
+
   text-align: center;
 }
 .inner-width{
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
-  padding: 40px;
-  color: #333;
+  padding: 30px;
+  color:#333;
   overflow: hidden;
 }
-.team-section h1{
+.team-section h2{
   font-size: 20px;
   text-transform: uppercase;
   display: inline-block;
@@ -23,23 +23,21 @@ body{
 }
 .pe{
   float: left;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   overflow: hidden;
-  padding: 40px 0;
+  padding: 40px 2%;
   transition: 0.4s;
 }
-.pe:hover{
-  background: #ddd;
-}
+
 .pe img{
   width: 120px;
   height: 120px;
 }
 .p-name{
-  margin: 16px 0;
-  text-transform: uppercase;
+  margin: 10px 0;
 }
-
+.p-des{
+}
 .p-sm{
   margin-top: 12px;
 }
@@ -54,11 +52,47 @@ body{
   transform: scale(1.3);
 }
 .p-sm a i{
+  color:#333;
+  line-height: 30px;
+}
+.red2{
+  float: left;
+  width: calc(100% / 3);
+  overflow: hidden;
+  padding-bottom: 20px;
+  transition: 0.4s;
+}
+.red2 img{
+  width: 120px;
+  height: 120px;
+}
+.red2-name{
+  margin: 16px 0;
+}
+.red2-des{
+}
+.red2-sm{
+  margin-top: 12px;
+}
+.red2-sm a{
+  margin: 0 4px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+}
+.red2-sm a:hover{
+  transform: scale(1.3);
+}
+.red2-sm a i{
   color: #333;
   line-height: 30px;
 }
 @media screen and (max-width:600px) {
   .pe{
+    width: 100%;
+  }
+  .red2{
     width: 100%;
   }
 }

@@ -11,6 +11,7 @@ new Glide('.glide', {
       },
       600:{
         perView: 1
+        
       }
     },
     autoplay: 3000
