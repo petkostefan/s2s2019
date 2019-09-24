@@ -433,6 +433,7 @@ body {
   float:left;
   overflow-y: auto;
   height: 75vh;
+  min-width: 50vw;
 }
 
 .popup_desno h3 {
@@ -471,12 +472,19 @@ body {
 }
 
 .popupphoto {
-  width: 20vw;
+  width: 25vw;
   height: 35vw;
   left: 0px;
   padding-top: 15px;
   padding-right: 20px;
+  min-width:20vw;
+  min-height: 33vw;
   /* background:  rgb(60, 175, 228); */
+}
+
+.popupphoto img {
+  height: 120px;
+  padding-left: 20%;
 }
 
 .popuptext {
@@ -827,6 +835,23 @@ footer {
   height: 100%;
 }
 
+.popup{
+  height: 85vh;
+}
+
 .popupphoto {
   width: 100%;
+  min-height: 40vh;
+  margin-bottom: 10px;
+}
+
+.popupphoto > img {
+  padding-left: 30%;
+  height: 100px;
+}
+
+.popup_desno{
+  height: 40vh;
+  border-left: none;
+  border-top: 3px solid white;
 }
