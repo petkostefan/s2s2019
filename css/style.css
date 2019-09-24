@@ -398,7 +398,7 @@ body {
   top: 12vh;
   left: 10vw;
   width: 80vw;
-  height: 80vh;
+  height: 85vh;
   justify-content: center;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -837,34 +837,41 @@ footer {
   }
 
   .popup_desno{
-    height: 40vh;
+    height: 41vh;
     border-left: none;
     border-top: 3px solid white;
+    margin-top: 5px;
   }
 
-
   .popupphoto img {
-    padding-left: 30%;
-    height: 100px;
+    padding-left: 35%;
+    height: 80px;
   }
   
   .predavac, .predavaci {
     margin-left: 25%;
   }
-}
-
-#particles-js {
-  height: 100%;
-}
-
-.popup{
-  height: 85vh;
-}
-
+  
   .popupphoto {
     width: 100%;
     min-height: 40vh;
+    height: 50px;
+    padding-top: 0;
   }
+
+  .popupphoto > p {
+    width: 130%;
+  }
+
+  #particles-js {
+    height: 100%;
+  }
+
+}
+
+
+
+
 
 
 
