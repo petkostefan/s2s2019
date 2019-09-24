@@ -1,0 +1,98 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+.team-section{
+
+  text-align: center;
+}
+.inner-width{
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  color:#333;
+  overflow: hidden;
+}
+.team-section h2{
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.pe{
+  float: left;
+  width: calc(100% / 4);
+  overflow: hidden;
+  padding: 40px 2%;
+  transition: 0.4s;
+}
+
+.pe img{
+  width: 120px;
+  height: 120px;
+}
+.p-name{
+  margin: 5px 0;
+}
+.p-des{
+  font-size: 15px;
+}
+.p-sm{
+  margin-top: 7px;
+}
+.p-sm a{
+  margin: 0 4px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+}
+.p-sm a:hover{
+  transform: scale(1.3);
+}
+.p-sm a i{
+  color:#333;
+  line-height: 30px;
+}
+.red2{
+  float: left;
+  width: calc(100% / 3);
+  overflow: hidden;
+  padding-top:40px;
+
+  transition: 0.4s;
+}
+.red2 img{
+  width: 120px;
+  height: 120px;
+}
+.red2-name{
+  margin: 16px 0;
+}
+.red2-des{
+}
+.red2-sm{
+  margin-top: 12px;
+}
+.red2-sm a{
+  margin: 0 4px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+}
+.red2-sm a:hover{
+  transform: scale(1.3);
+}
+.red2-sm a i{
+  color: #333;
+  line-height: 30px;
+}
+@media screen and (max-width:600px) {
+  .pe{
+    width: 100%;
+  }
+  .red2{
+    width: 100%;
+  }
+}

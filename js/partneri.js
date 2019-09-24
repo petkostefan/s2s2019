@@ -10,7 +10,8 @@ new Glide('.glide', {
         perView: 3
       },
       600:{
-        perView: 2
+        perView: 1
+        
       }
     },
     autoplay: 3000
@@ -27,7 +28,7 @@ new Glide('.glide', {
         perView: 3
       },
       600:{
-        perView: 2
+        perView: 1
       }
     },
     autoplay: 3000
@@ -45,7 +46,7 @@ new Glide('.mediji', {
         perView: 3
       },
       600:{
-        perView: 2
+        perView: 1
       }
     },
     autoplay: 3000
