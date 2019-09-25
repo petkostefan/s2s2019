@@ -22,16 +22,35 @@
 </head>
 
 <body>
-
+  <div class="responsive-overlay"></div>
+  <div class="responsive-menu">
+      <i id="hamburger-icon" class="fas fa-bars"></i>
+      <ul>
+        <li><a class="rm-link" href="#projekat">O projektu</a></li>
+        <li><a class="rm-link" href="#radionice">Radionice</a></li>
+        <li><a class="rm-link" href="#panel">Panel</a></li>
+        <li><a class="rm-link" href="#faq">FAQ</a></li>
+        <li><a class="rm-link" href="#agenda">Agenda</a></li>
+        <li><a class="rm-link" href="#partneri">Partneri</a></li>
+        <li><a class="rm-link" href="#tim">Tim</a></li>
+        <li><a class="rm-link" href="#kontakt">Kontakt</a></li>
+      </ul>
+  </div>
+  <div class="responsive-navbar">
+      <i id="hamburger-icon" class="fas fa-bars"></i>
+      <a href="/"><img id="logo-responsive-menu" src="img/Fonis2.png" alt="FONIS"></a>
+  </div>
   <header>
     <div class="header">
       <ul>
         <li><a href="#projekat">O projektu</a></li>
         <li><a href="#radionice">Radionice</a></li>
-        <li><a href="comingsoon.html">Tim</a></li>
+        <li><a href="#panel">Panel</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <a href="/"><img src="img/Fonis2.png" alt="FONIS"></a>
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#partneri">Partneri</a></li>
+        <li><a href="#tim">Tim</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
@@ -53,11 +72,694 @@
       </p>
       <button class="prijava-btn">Prijava</button>
     </div>
-
   </div>
-
+<!-- Pocetak - Radionice -->
+<div class="container" id="radionice">
+  <h2 class="center-text margin-bottom-radionice section-h2">Radionice</h2>
+  <!-- Pocetak - Radionice - Red -->
+  <div class="row radionice_red">
+    <!-- Pocetak - Radionica 1 -->
+    <div class="col-sm-1 col-md-3">
+      <div class="kartica dataScience101">
+        <div class="sestougao">
+            <a class="okvir ">
+            <img src="img/logos/dataScience.png" alt="" class="ikonica">
+            </a>
+        </div>
+        <div class="tekst"> 
+          <h3>Data Science 101</h3>
+          <p> Želite da znate šta je to Data Science u Python-u i upoznate se sa 
+              njegovim osnovnim bibliotekama? Na pravom ste putu!
+          </p>
+          <button onclick="openDataScience101()" id='show' class="vidijos">Vidi još...</button>
+        </div>
+      </div>
+    </div>
+    <!-- Kraj - Radionica 1 -->
+    <!-- Pocetak - Radionica 2 -->
+    <div class="col-sm-1 col-md-3">
+      <div class="kartica introToJava">
+          <div class="sestougao">
+              <a class="okvir">
+                  <img src="img/logos/java.png" alt="" class="ikonica">
+              </a>
+          </div>
+          <div class="tekst"> 
+            <h3>Intro to Java</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <button onclick="openIntroToJava()" id='show' class="vidijos">Vidi još...</button>
+          </div>
+      </div>
+    </div>
+    <!-- Kraj - Radionica 2 -->
+    <!-- Pocetak - Radionica 3 -->
+    <div class="col-sm-1 col-md-3">
+      <div class="kartica realTimeDataProcessing">
+          <div class="sestougao">
+              <a class="okvir">
+                  <img src="img/logos/realTimeDataProcessing.png" alt="" class="ikonica">
+              </a>
+          </div>
+          <div class="tekst"> 
+            <h3>Real Time Data Processing</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <button onclick="openRealTimeDataProcessing()" id='show' class="vidijos">Vidi još...</button>
+          </div>
+      </div>   
+    </div>
+    <!-- Kraj - Radionica 3 -->
+    <!-- Pocetak - Radionica 4 -->
+    <div class="col-sm-1 col-md-3">
+      <div class="kartica introToGraphicDesign">
+          <div class="sestougao">
+              <a class="okvir">
+                  <img src="img/logos/design.png" alt="" class="ikonica">
+              </a>
+          </div>
+          <div class="tekst"> 
+            <h3>Introduction to Graphic Design </h3>
+            <p> Kreativac si? Ne znaš odakle da kreneš? Srećom, mi znamo!
+            </p>
+            <button onclick="openIntroToGraphicDesign()" id='show' class="vidijos">Vidi još...</button>
+          </div>
+      </div>
+    </div>
+    <!-- Kraj - Radionica 4 -->
+    <!-- Pocetak - Radionica 5 -->
+    <div class="col-sm-1 col-md-3">
+        <div class="kartica webAppWorkshop">
+            <div class="sestougao">
+                <a class="okvir">
+                    <img src="img/logos/webApp.png" alt="" class="ikonica">
+                </a>
+            </div>
+            <div class="tekst"> 
+              <h3>WebApp Workshop</h3>
+              <p> Hoćeš da napraviš web aplikaciju ali mislis da si “samo” početnik? 
+                Dodji I napravi jednu zajedno sa nama!
+              </p>
+              <button onclick="openWebAppWorkshop()" id='show' class="vidijos">Vidi još...</button>
+            </div>
+          </div>  
+    </div>
+    <!-- Kraj - Radionica 5 -->
+    <!-- Pocetak - Radionica 6 -->
+        <div class="col-sm-1 col-md-3">
+            <div class="kartica vueIsForYou">
+                <div class="sestougao">
+                    <a class="okvir">
+                        <img src="img/logos/vue.png" alt="" class="ikonica">
+                    </a>
+                </div>
+                <div class="tekst"> 
+                  <h3>Vue is for you</h3>
+                  <p> Vue je trenutno najmoderniji framework I sve traženiji, 
+                      i to upravo sa razlogom zato sto je brz za učenje I ima 
+                      puno izvora. 
+                  </p>
+                  <button onclick="openVueIsForYou()" id='show' class="vidijos">Vidi još...</button>
+                </div>
+            </div>  
+        </div>
+    <!-- Kraj - Radionica 6 -->
+    <!-- Pocetak - Radionica 7 -->
+        <div class="col-sm-1 col-md-3">
+            <div class="kartica sweetGit">
+                <div class="sestougao">
+                    <a class="okvir">
+                        <img src="img/logos/git.png" alt="" class="ikonica">
+                    </a>
+                </div>
+                <div class="tekst"> 
+                  <h3>Sweet GIT</h3>
+                  <p> Na ovoj radionici polaznici će naučiti kako da koriste sistem 
+                    za verzionisanje koda Git iz komandne linije.
+                  </p>
+                  <button onclick="openSweetGit()" id='show' class="vidijos">Vidi još...</button>
+                </div>
+              </div>  
+        </div>
+    <!-- Kraj - Radionica 7 -->
+    <!-- Pocetak - Radionica 8 -->
+        <div class="col-sm-1 col-md-3">
+            <div class="kartica introToDjango">
+                <div class="sestougao">
+                    <a class="okvir">
+                        <img src="img/logos/django.png" alt="" class="ikonica">
+                    </a>
+                </div>
+                <div class="tekst"> 
+                  <h3>Intro to Django</h3>
+                  <p> Django je jedan od najpopularnijih web framework-a napisan u Python-u.
+                  </p>
+                  <button onclick="openIntroToDjango()" id='show' class="vidijos">Vidi još...</button>
+                </div>
+              </div>  
+        </div>
+    <!-- Kraj - Radionica 8 -->
+    <div class="col-sm-1 col-md-3 deveta"></div>
+        <!-- Pocetak - Radionica 9 -->
+            <div class="col-sm-1 col-md-3">
+                <div class="kartica introToC">
+                    <div class="sestougao">
+                        <a class="okvir">
+                            <img src="img/logos/c.png" alt="" class="ikonica">
+                        </a>
+                    </div>
+                    <div class="tekst"> 
+                      <h3>Intro to C</h3>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      </p>
+                      <button onclick="openIntroToC()" id='show' class="vidijos">Vidi još...</button>
+                    </div>
+                  </div>  
+           </div>
+        <!-- Kraj - Radionica 9 -->
+            <!-- Pocetak - Radionica 10 -->
+    
+        <div class="col-sm-1 col-md-3">
+            <div class="kartica krozBazuDoJave">
+                <div class="sestougao">
+                    <a class="okvir">
+                        <img src="img/logos/odJaveDoBaze.png" alt="" class="ikonica">
+                    </a>
+                </div>
+                <div class="tekst"> 
+                  <h3>Kroz bazu do Jave</h3>
+                  <p> Radionica “Kroz bazu do Jave” ima za cilj da upozna studente sa osnovama MySQL.
+                  </p>
+                  <button onclick="openKrozBazuDoJave()" id='show' class="vidijos">Vidi još...</button>
+                </div>
+              </div>  
+        </div>
+        
+    <!-- Kraj - Radionica 10 -->
+  </div>
+  <!-- Kraj - Radionice - Red -->
+  </div>
+  <!-- Pocetak - Popups -->
+  <!-- Pocetak - dataScience101 - Popup -->
+  <div class="popup" id="dataScience101">
+    <div class="popupspace row">
+      <div class="col-sm-1 col-md-3 popup_levo">
+        <div class="popupphoto">
+            <img src="img/logos/dataScience.png" alt="">
+            <br><br>
+            <h3>Data science 101</h3>
+            <br>
+            <p> Neophodno predznanje?                 <br> - Python i srednjoškolska matematika. <br>
+                Da li je potrebno poneti svoj laptop? <br> - Da. <br>
+                Neophodan softver:                    <br> - <a href="https://www.anaconda.com/distribution/#download-section">Anaconda</a>. <br>
+              </p>
+        </div> 
+      </div>
+      <div class="col-sm-1 col-md-9 popup_desno">
+        <div class="popuptext">
+            <button onclick="closeDataScience101()" class="close"><img src="img/close.png" alt="" id="close"></button>
+            <h3>Opis radionice</h3><br>
+            <p>
+                Želite da znate šta je to Data Science u Python-u i upoznate se sa njegovim osnovnim bibliotekama? Na pravom ste putu!
+Upoznavanje sa bibliotekama poput pandas i numpy, kao i bibliotekama za vizuelizaciju matplotlib I seaborn, samo je prvi korak ka Vašoj karijeri. Nakon toga sledi uzbudljiviji deo- kreiramo prvi model uz pomoć najpoznatijih Machine Learning algoritama za klasifikaciju. Naučićemo kako da eveluiramo naše modele I učinimo ih jos boljim, a potom ćemo saznati šta su to Enseble algoritmi kao i problem klasterovanja.
+<br><br>
+            </p>
+            <div class="row">
+              <div class="col-sm-1 col-md-6">
+                <img src="img/predavaci/Siniša Stanivuk - Data Science 101.png" alt="" class="predavaci">
+                <h4>Siniša Stanivuk</h4>
+                <p> Siniša "Stopwolf" Stanivuk je student treće godine Fakulteta organizacionih nauka i Data Scientist u svoje slobodno vreme.
+                    Kombinovanjem svog iskustva volontiranja na Data Science konferenciji i privrženosti matematici i brojevima, znao je da je to prava karijera za njega. Nakon samo 5 meseci učenja, hteo je da testira svoje sposobnosi na Datathon-u na kojem je, zajedno sa Nikolom, osvojio 3. mesto!
+                    U svoje slobodno vreme, voli da čita o produktivnosti i samousavršavanju, ali i da igra košarku i svira bubnjeve.                    
+                </p>
+              </div>
+              <div class="col-sm-1 col-md-6">
+                  <img src="img/predavaci/Nikola Đorđević - Data Science 101.png" alt="" class="predavaci">
+                  <h4> Nikola Đorđević</h4>
+                  <p>   Nikola Đorđević je student treće godine Fakulteta organizacionih nauka i već godinu dana bavi se data science-om samostalno, ali i uz pomoć kolega sa fakulteta. Učestvovao je na ovogodišnjem TeleSign Datathon-u sa timom ljudi među kojima je bio i Siniša.
+                        Još od prve godine fakulteta ga je interesovao data science i šta to tačno on predstavlja, ali isto tako pronašao se još i u grafičkom dizajnu i preduzetništvu.
+                  </p>
+              </div>
+            </div>
+        </div>
+      </div>       
+      </div>
+    </div>
+  <!-- Kraj - dataScience101 - Popup -->
+  <!-- Pocetak - introToJava - Popup -->
+  <div class="popup" id="introToJava">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/java.png" alt="">
+              <br><br>
+              <h3>Intro To Java</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - .<br>
+                  Da li je potrebno poneti svoj laptop?  <br> - . <br>
+                  Neophodan softver:                    <br> - <a href=""> </a> i <a href="">  </a>. <br>
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeIntroToJava()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3></h3><br>
+              <p> 
+              <br><br>
+              </p>
+              <div class="row">
+                <div class="col-sm-1 col-md-12">
+                  <img src="" alt="" class="predavac">
+                  <h4></h4>
+                  <p>
+                    
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - introToJava - Popup -->
+  <!-- Pocetak - realTimeDataProcessing - Popup -->
+  <div class="popup" id="realTimeDataProcessing">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/realTimeDataProcessing.png" alt="">
+              <br><br>
+              <h3>Real Time Data Processing</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - .<br>
+                  Da li je potrebno poneti svoj laptop?  <br>- . <br>
+                  Neophodan softver:                    <br> - <a href=""> </a> i <a href="">  </a>. <br>
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeRealTimeDataProcessing()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3></h3><br>
+              <p> 
+              <br><br>
+              </p>
+              <div class="row">
+                <div class="col-sm-1 col-md-12">
+                  <img src="" alt="" class="predavac">
+                  <h4></h4>
+                  <p>
+                    
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - realTimeDataProcessing - Popup -->
+  <!-- Pocetak - introToGraphicDesign - Popup -->
+  <div class="popup" id="introToGraphicDesign">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/design.png" alt="">
+              <br><br>
+              <h3>Intro To Graphic Design</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - Dobro raspoloženje i motivacija!<br>
+                  Da li je potrebno poneti svoj laptop?  <br>- Da. <br>
+                  Neophodan softver:                    <br> - Adobe Illustrator CC i Adobe Photoshop CC. <br>
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeIntroToGraphicDesign()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3>Opis radionice</h3><br>
+              <p> Kreativac si? Ne znaš odakle da kreneš? Srećom, mi znamo!
+                  Na našoj radionici imaćeš prilike da se upoznas sa osnovnim principima grafičkog dizajna 
+                  kroz rad u programima Adobe Photoshop I Adobe Ilustrator. Videćeš u čemu je njihova razlika 
+                  I uživati u njihovoj primeni!                  
+              <br><br>
+              </p>
+              <div class="row">
+                  <div class="col-sm-1 col-md-6">
+                    <img src="img/predavaci/Nemanja Pavlović - Intro to Graphic Design.png" alt="" class="predavaci">
+                    <h4>Nemanja Pavlović</h4>
+                    <p> Dizajn je sve i sve što vidiš je dizajn. On ti daje prliku da stvaraš. Jednom kada udješ 
+                      u taj svet, sve gledaš iz druge perspektive. Moje ime je Nemanja i iako me je dizajn oduvek 
+                      zanimao, njime sam počeo da se bavim konkretnije tek kada sam u prvoj godini pristupio 
+                      studenskim organizacijama. Više volim vektore od piksela, tako da je Illustrator moja alatka. 
+                      Spreman sam da svoje iskustvo podelim sa tobom, tako da, prijavi se da zajedno testiramo 
+                      tvoju kreativnost!
+                    </p>
+                  </div>
+                  <div class="col-sm-1 col-md-6">
+                      <img src="img/predavaci/Stefan Milanovic - Intro to Graphic Design.png" alt="" class="predavaci">
+                      <h4> Stefan Milovanović</h4>
+                      <p> Aktivnije sam počeo da se bavim grafičkim dizajnom od kada sam upisao fakultet. U okviru 
+                        studentskih organizacija sam imao prilike da naučim mnogo od svojih kolega u ovoj sferi i 
+                        baš zato imam želju da to znanje dalje prenesem. Uvek se trudim da budem inovativan kada 
+                        pokušavam da napravim nešto i trudim se da ljude oko mene takođe podstaknem na to. 
+                        Illustrator i Photoshop nam pružaju mnogo mogućnosti da ispoljimo kreativnost, pa zašto to 
+                        i ne bismo uradili?
+                      </p>
+                  </div>
+                </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - introToGraphicDesign - Popup -->
+  <!-- Pocetak - webAppWorkshop - Popup -->
+  <div class="popup" id="webAppWorkshop">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/webApp.png" alt="">
+              <br><br>
+              <h3>Web App Workshop</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - Ne.<br>
+                  Da li je potrebno poneti svoj laptop?  <br>- Da. <br>
+                  Neophodan softver:                    <br> - <a href="https://code.visualstudio.com/download"> Visual Studio Code</a>. <br>
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeWebAppWorkshop()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3>Opis radionice</h3><br>
+              <p> Hoćeš da napraviš web aplikaciju ali mislis da si “samo” početnik? Dodji I napravi jednu zajedno sa nama!
+                  Naučićemo te svemu osnovnom što treba da znaš i pravac na posao! 
+                  Uspećeš da savladaš proces pravljenja od osnovnog izgleda do funkcionalnosti I uz to se čak I zabavljati. Čekamo te!
+                
+              <br><br>
+              </p>
+              <div class="row">
+                <div class="col-sm-1 col-md-6">
+                  <img src="img/predavaci/Daniel Fazlijević - WebApp workshop.png" alt="" class="predavaci">
+                  <h4>Daniel Fazlijević</h4>
+                  <p> Zdravo, ja sam Daniel, student sam treće godine FON-a i bavim se Web Developmentom. 
+                      Za programiranje se zanimam još od osnovne škole ali tek u srednjoj školi počinjem 
+                      samostalno da učim. Trenutno radim u kompaniji za razvoj softvera, 4bees, kao Full 
+                      Stack Developer. Za sajtove i aplikacije koje razvijam najčešće koristim HTML, CSS 
+                      i Javascript, a omiljeni framework mi je Vue.js. Često za svoje lične projekte volim 
+                      da koristim nove tehnologije, a najčešće Node i Python. Prošle godine sam na S2S 
+                      držao radionicu ‘Od 0 do sajta’ na kojoj sam predavao o osnovama pravljenja modernih 
+                      sajtova, a na ovogodišnjoj ću se više fokusirati na pravljenje Web aplikacija odnosno 
+                      Javascript.
+                  </p>
+                </div>
+                <div class="col-sm-1 col-md-6">
+                    <img src="img/predavaci/Marijana Maksimović - WebApp workshop.png" alt="" class="predavaci">
+                    <h4> Marijana Maksimović</h4>
+                    <p> Student sam treće godine Fakulteta Organizacionih Nauka. 
+                        Programiranje me zanima još od srednje škole, dok se intenzivnije 
+                        bavim Web Developmentom od prve godine fakulteta. Osim toga, bavim se 
+                        i dizajnom, tako da mi je izgled aplikacije ili sajta jako bitan. 
+                        Ove godine na S2S-u ću predavati osnove Web developmenta, HTML i CSS.
+                    </p>
+                </div>
+              </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - webAppWorkshop - Popup -->
+  <!-- Pocetak - vueIsForYou - Popup -->
+  <div class="popup" id="vueIsForYou">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/vue.png" alt="">
+              <br><br>
+              <h3>Vue Is For You</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - Poželjno osnovno znanje Javascript-a, HTML-a i CSS-a..<br>
+                  Da li je potrebno poneti svoj laptop?  <br>- Ne. <br>
+                  Neophodan softver:                    <br> - <a href="https://nodejs.org/en/ ">Node.js</a> i <a href="https://vuejs.org/v2/guide/installation.html"> Vue </a>. <br>
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeVueIsForYou()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3>Opis radionice</h3><br>
+              <p> Vue je trenutno najmoderniji framework I sve traženiji, i to upravo sa razlogom zato 
+                sto je brz za učenje I ima puno izvora. Ova radionica će biti I više nego dovoljna da 
+                pokaže pun značaj korišćenja ovog frameworka, ali I da zainteresuje ljude time što ce 
+                videti sša sve potencijalno mogu da naprave sa ovim znanjem.
+                Čak I ako ne planirate da se profesionalno bavite ovim, znanje stečeno na ovoj radionici 
+                će Vam biti jako korisno bar za licnu upotrebu, jer je u svakom poslu potrebna web 
+                aplikacija nekog tipa, pa zasto ne biste znali sami da je napravite?
+              <br><br>
+              </p>
+              <div class="row">
+                <div class="col-sm-1 col-md-12">
+                  <img src="img/predavaci/Mila Cvetković - Vue is for you.png" alt="" class="predavac">
+                  <h4>Mila Cvetković</h4>
+                  <p> Volim da pijem kafu i da pravim stvari, te stvari su za sada sajtovi ali ko zna za dalje. 
+                    Ja sam tip osobe kojoj je uvek potrebna neka zanimacija i neki problem, a kada se bavite 
+                    ovim uvek ćete imati oba, ovog drugog pogotovo. Mislim da je svakome potrebna neka veština 
+                    na kojoj može da radi bez obzira na sve, i to upravo može da bude ovo.
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - vueIsForYou - Popup -->
+  <!-- Pocetak - sweetGit - Popup -->
+  <div class="popup" id="sweetGit">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/git.png" alt="">
+              <br><br>
+              <h3>Sweet GIT</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - Dobro raspoloženje i entuzijazam.<br>
+                  Da li je potrebno poneti svoj laptop?  <br>- Da. <br>
+                  Neophodan softver:                    <br> - <a href="https://git-scm.com/downloads"> GIT</a>. <br>
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeSweetGit()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3>Opis radionice</h3><br>
+              <p> Na ovoj radionici polaznici će naučiti kako da koriste sistem za verzionisanje koda Git iz komandne linije.. Cilj radionice je da polaznici razumeju suštinu Git-a i sistema za verzionisanje koda uopšte, kako bi stekli čvstu osnovu zbog koje će se osećati sigurno prilikom samostalnog istraživanja Git-a, ali i drugih sistema za verzionisanje koda.
+              <br><br>
+              </p>
+              <div class="row">
+                <div class="col-sm-1 col-md-12">
+                  <img src="img/predavaci/Jelena Milev - Sweet git.png" alt="" class="predavac">
+                  <h4>Jelena Milev</h4>
+                  <p>
+                      Zdravo, moje ime je Jelena, student sam 4. godine ISIT-a i ovogodišnji FONIS-ov Koordinator za upravljanje znanjem. Sa Git-om sam se po prvi put upoznala u 2. godini studija na kursu napredne Jave koji je organizovala Laboratorija za veštačku inteligenciju. Tom prilikom sam naučila da koristim osnovne Git komande iz korisničkog okruženja i na taj način sam koristila Git u radu na narednih nekoliko projekata. Moram priznati da pritom nisam bila sigurna šta će pritisak na koje dugme tačno u pozadini uraditi i par puta sam napravila štetu koju sam morala da popravim koristeći Git iz komadne linije. Stoga sam odlučila da zasučem rukave i pozabavim se suštinom Git-a i njegovih komandi.Na ovoj radionici želim da podelim ono što sam naučila o Git-u i da kolegama u što većoj meri olakšam učenje nečega što je veoma tražena stavka u CV-u. 
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - sweetGit - Popup -->
+  <!-- Pocetak - introToDjango - Popup -->
+  <div class="popup" id="introToDjango">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/django.png" alt="">
+              <br><br>
+              <h3>Intro To Django</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - Poželjno osnovno znanje Python-a, HTML-a i CSS-a.<br>
+                  Da li je potrebno poneti svoj laptop?  <br> - Ne. <br>
+                  Neophodan softver:                    <br> - Obezbeđen sav neophodan softver (Python i PyCharm). <br>
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeIntroToDjango()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3>Opis radionice</h3><br>
+              <p> Django je jedan od najpopularnijih web framework-a napisan u Python-u. Cilj radionice je 
+                  interaktivno upoznavanje sa Django framework-om. Polaznici ove radionice će imati priliku da,
+                  uz teorijsku osnovu, na praktičnom primeru jednostavne web aplikacije vide prednosti ovog 
+                  framework-a. 
+              <br><br>
+              </p>
+              <div class="row">
+                <div class="col-sm-1 col-md-12">
+                  <img src="img/predavaci/Ana Ristić - Intro to Django.png" alt="" class="predavac">
+                  <h4>Ana Ristić</h4>
+                  <p> Student FON-a koji se sa Django-m prvi put susrela na 4. godini u okviru izbornog predmeta 
+                      na fakultetu, a zatim samostalno nastavila usavršavanje. Cilj mi je da sa ove radionice 
+                      izađete sa više znanja iz ove oblasti nego što ste ušli.
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - introToDjango - Popup -->
+  <!-- Pocetak - introToC - Popup -->
+  <div class="popup" id="introToC">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/c.png" alt="">
+              <br><br>
+              <h3>Intro To C</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - .<br>
+                  Da li je potrebno poneti svoj laptop?  <br>- . <br>
+                  Neophodan softver:                    <br> - <a href=""> </a> i <a href="">  </a>. <br>
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeIntroToC()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3></h3><br>
+              <p> 
+              <br><br>
+              </p>
+              <div class="row">
+                <div class="col-sm-1 col-md-12">
+                  <img src="" alt="" class="predavac">
+                  <h4></h4>
+                  <p>
+                    
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - introToC - Popup -->
+  <!-- Pocetak - krozBazuDoJave - Popup -->
+  <div class="popup" id="krozBazuDoJave">
+      <div class="popupspace row">
+        <div class="col-sm-1 col-md-3 popup_levo">
+          <div class="popupphoto">
+              <img src="img/logos/odJaveDoBaze.png" alt="">
+              <br><br>
+              <h3>Kroz Bazu Do Jave</h3>
+              <br>
+              <p> Neophodno predznanje?                 <br> - Osnove Java programiranja.<br>
+                  Da li je potrebno poneti svoj laptop?  <br> - Ne. <br>
+                  Neophodan softver:                    <br> - Netbeans i Wamp(ili xampp). 
+                </p>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-9 popup_desno">
+          <div class="popuptext">
+              <button onclick="closeKrozBazuDoJave()" class="close"><img src="img/close.png" alt="" id="close"></button>
+              <h3>Opis radionice</h3><br>
+              <p> Radionica “Kroz bazu do Jave” ima za cilj da upozna studente sa osnovama MySQL. Pored toga, 
+                studenti će imati priliku da kroz praktične primere sagledaju povezanost baza sa programskim 
+                jezikom Java, manipulaciju podacima, kao I zadavanje direktnih upita za rešavanje istih.
+              <br><br>
+              </p>
+              <div class="row">
+                <div class="col-sm-1 col-md-12">
+                  <img src="img/predavaci/Đorđe Trmčić - Kroz javu do baze.png" alt="" class="predavac">
+                  <h4>Đorđe Trmčić</h4>
+                  <p> Student sam četvrte godine Fakulteta organizacionih nauka na smeru Informacioni sistemi 
+                    I tehnologije. Programiranje sam naučio sam, eksperimentišući.Zatim sam počeo da držim 
+                    privatne časove, gde sam stekao mnogo više iskustva I shvatio neke stvari jos bolje. 
+                    Vrlo sam uporan I kreativan prilikom rešavanja programerskih problema.
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+  <!-- Kraj - krozBazuDoJave - Popup -->
+  <!-- Kraj - Popups -->
+<!-- Kraj - Radionice -->
+<div id="panel">
+  <h2 class="section-h2">Panel</h2>
+  <p id="main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellendus obcaecati natus doloribus deserunt ex dolores harum tenetur in enim accusamus magnam dignissimos, et itaque! Dicta quia doloribus doloremque fuga ad. Quae iusto est adipisci pariatur aliquid doloribus neque, eos vitae sint, unde at nemo qui asperiores. Repellat nihil praesentium accusantium nemo, sunt aliquid autem quaerat ipsa! Vel dolorum sed, iusto debitis hic iste optio aut eveniet, labore aspernatur corrupti ex harum quis ducimus dolore minima porro aliquam delectus eligendi deleniti! Ad laudantium delectus illo! Repellat unde similique commodi accusamus, recusandae cumque perspiciatis nisi nostrum, aspernatur, obcaecati suscipit aliquam est.</p>
+    <div class="panel-boxes-cont">
+      <div class="panel-containers">
+        <div class="img-circle">
+            <img src="img/guarana.png"/>
+          </div>
+          <h4 class="panelist-name">Ime Prezime</h4>
+          <div class="underline-panelist"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aliquid?</p>
+        </div>
+        <div class="panel-containers">
+          <div class="img-circle">
+              <img src="img/guarana.png"/>
+          </div>
+          <h4 class="panelist-name">Ime Prezime</h4>
+          <div class="underline-panelist"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aliquid?</p>
+        </div>
+        <div class="panel-containers">
+          <div class="img-circle">
+              <img src="img/guarana.png"/>
+          </div>
+          <h4 class="panelist-name">Ime Prezime</h4>
+          <div class="underline-panelist"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aliquid?</p>
+        </div>
+        <div class="panel-containers">
+          <div class="img-circle">
+              <img src="img/guarana.png"/>
+          </div>
+          <h4 class="panelist-name">Ime Prezime</h4>
+          <div class="underline-panelist"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aliquid?</p>
+        </div>
+    </div>
+    <div class="panel-boxes-cont">
+      <div class="panel-containers">
+        <div class="img-circle">
+            <img src="img/guarana.png"/>
+          </div>
+          <h4 class="panelist-name">Ime Prezime</h4>
+          <div class="underline-panelist"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aliquid?</p>
+        </div>
+        <div class="panel-containers">
+          <div class="img-circle">
+              <img src="img/guarana.png"/>
+          </div>
+          <h4 class="panelist-name">Ime Prezime</h4>
+          <div class="underline-panelist"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aliquid?</p>
+        </div>
+        <div class="panel-containers">
+          <div class="img-circle">
+              <img src="img/guarana.png"/>
+          </div>
+          <h4 class="panelist-name">Ime Prezime</h4>
+          <div class="underline-panelist"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aliquid?</p>
+        </div>
+        <div class="panel-containers">
+          <div class="img-circle">
+              <img src="img/guarana.png"/>
+          </div>
+          <h4 class="panelist-name">Ime Prezime</h4>
+          <div class="underline-panelist"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aliquid?</p>
+        </div>
+    </div>
+</div>
   <div id="agenda">
-    <h2 class="text-center margin-top-agenda">Agenda</h2>
+    <h2 class="text-center margin-top-agenda section-h2">Agenda</h2>
     <div class="agenda-btn-container text-center">
       <div class="subota active-agenda-btn">Subota</div>
       <div class="nedelja">Nedelja</div>
@@ -301,619 +1003,6 @@
       </tr>
     </table>
   </div>
-
-<!-- Pocetak - Radionice -->
-  <div class="container" id="radionice">
-  <!-- Pocetak - Radionice - Red -->
-  <div class="row radionice_red">
-    <!-- Pocetak - Radionica 1 -->
-    <div class="col-sm-1 col-md-3">
-      <div class="kartica dataScience101">
-        <div class="sestougao">
-            <a class="okvir ">
-            <img src="img/radionica_icon.png" alt="" class="ikonica">
-            </a>
-        </div>
-        <div class="tekst"> 
-          <h3>Data Science 101</h3>
-          <p> Želite da znate šta je to Data Science u Python-u i upoznate se sa 
-              njegovim osnovnim bibliotekama? Na pravom ste putu!
-          </p>
-          <button onclick="openDataScience101()" id='show' class="vidijos">Vidi još...</button>
-        </div>
-      </div>
-    </div>
-    <!-- Kraj - Radionica 1 -->
-    <!-- Pocetak - Radionica 2 -->
-    <div class="col-sm-1 col-md-3">
-      <div class="kartica introToJava">
-          <div class="sestougao">
-              <a class="okvir">
-                  <img src="img/radionica_icon.png" alt="" class="ikonica">
-              </a>
-          </div>
-          <div class="tekst"> 
-            <h3>Intro to Java</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            </p>
-            <button onclick="openIntroToJava()" id='show' class="vidijos">Vidi još...</button>
-          </div>
-      </div>
-    </div>
-    <!-- Kraj - Radionica 2 -->
-    <!-- Pocetak - Radionica 3 -->
-    <div class="col-sm-1 col-md-3">
-      <div class="kartica realTimeDataProcessing">
-          <div class="sestougao">
-              <a class="okvir">
-                  <img src="img/radionica_icon.png" alt="" class="ikonica">
-              </a>
-          </div>
-          <div class="tekst"> 
-            <h3>Real Time Data Processing</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            </p>
-            <button onclick="openRealTimeDataProcessing()" id='show' class="vidijos">Vidi još...</button>
-          </div>
-      </div>   
-    </div>
-    <!-- Kraj - Radionica 3 -->
-    <!-- Pocetak - Radionica 4 -->
-    <div class="col-sm-1 col-md-3">
-      <div class="kartica introToGraphicDesign">
-          <div class="sestougao">
-              <a class="okvir">
-                  <img src="img/radionica_icon.png" alt="" class="ikonica">
-              </a>
-          </div>
-          <div class="tekst"> 
-            <h3>Introduction to Graphic Design </h3>
-            <p> Kreativac si? Ne znaš odakle da kreneš? Srećom, mi znamo!
-            </p>
-            <button onclick="openIntroToGraphicDesign()" id='show' class="vidijos">Vidi još...</button>
-          </div>
-      </div>
-    </div>
-    <!-- Kraj - Radionica 4 -->
-    <!-- Pocetak - Radionica 5 -->
-    <div class="col-sm-1 col-md-3">
-        <div class="kartica webAppWorkshop">
-            <div class="sestougao">
-                <a class="okvir">
-                    <img src="img/radionica_icon.png" alt="" class="ikonica">
-                </a>
-            </div>
-            <div class="tekst"> 
-              <h3>WebApp Workshop</h3>
-              <p> Hoćeš da napraviš web aplikaciju ali mislis da si “samo” početnik? 
-                Dodji I napravi jednu zajedno sa nama!
-              </p>
-              <button onclick="openWebAppWorkshop()" id='show' class="vidijos">Vidi još...</button>
-            </div>
-          </div>  
-    </div>
-    <!-- Kraj - Radionica 5 -->
-    <!-- Pocetak - Radionica 6 -->
-        <div class="col-sm-1 col-md-3">
-            <div class="kartica vueIsForYou">
-                <div class="sestougao">
-                    <a class="okvir">
-                        <img src="img/radionica_icon.png" alt="" class="ikonica">
-                    </a>
-                </div>
-                <div class="tekst"> 
-                  <h3>Vue is for you</h3>
-                  <p> Vue je trenutno najmoderniji framework I sve traženiji, 
-                      i to upravo sa razlogom zato sto je brz za učenje I ima 
-                      puno izvora. 
-                  </p>
-                  <button onclick="openVueIsForYou()" id='show' class="vidijos">Vidi još...</button>
-                </div>
-            </div>  
-        </div>
-    <!-- Kraj - Radionica 6 -->
-    <!-- Pocetak - Radionica 7 -->
-        <div class="col-sm-1 col-md-3">
-            <div class="kartica sweetGit">
-                <div class="sestougao">
-                    <a class="okvir">
-                        <img src="img/radionica_icon.png" alt="" class="ikonica">
-                    </a>
-                </div>
-                <div class="tekst"> 
-                  <h3>Sweet GIT</h3>
-                  <p> Na ovoj radionici polaznici će naučiti kako da koriste sistem 
-                    za verzionisanje koda Git iz komandne linije.
-                  </p>
-                  <button onclick="openSweetGit()" id='show' class="vidijos">Vidi još...</button>
-                </div>
-              </div>  
-        </div>
-    <!-- Kraj - Radionica 7 -->
-    <!-- Pocetak - Radionica 8 -->
-        <div class="col-sm-1 col-md-3">
-            <div class="kartica introToDjango">
-                <div class="sestougao">
-                    <a class="okvir">
-                        <img src="img/radionica_icon.png" alt="" class="ikonica">
-                    </a>
-                </div>
-                <div class="tekst"> 
-                  <h3>Intro to Django</h3>
-                  <p> Django je jedan od najpopularnijih web framework-a napisan u Python-u.
-                  </p>
-                  <button onclick="openIntroToDjango()" id='show' class="vidijos">Vidi još...</button>
-                </div>
-              </div>  
-        </div>
-    <!-- Kraj - Radionica 8 -->
-        <!-- Pocetak - Radionica 9 -->
-            <div class="col-sm-1 col-md-3">
-                <div class="kartica introToC">
-                    <div class="sestougao">
-                        <a class="okvir">
-                            <img src="img/radionica_icon.png" alt="" class="ikonica">
-                        </a>
-                    </div>
-                    <div class="tekst"> 
-                      <h3>Intro to C</h3>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      </p>
-                      <button onclick="openIntroToC()" id='show' class="vidijos">Vidi još...</button>
-                    </div>
-                  </div>  
-           </div>
-        <!-- Kraj - Radionica 9 -->
-            <!-- Pocetak - Radionica 10 -->
-    
-        <div class="col-sm-1 col-md-3">
-            <div class="kartica krozBazuDoJave">
-                <div class="sestougao">
-                    <a class="okvir">
-                        <img src="img/radionica_icon.png" alt="" class="ikonica">
-                    </a>
-                </div>
-                <div class="tekst"> 
-                  <h3>Kroz bazu do Jave</h3>
-                  <p> Radionica “Kroz bazu do Jave” ima za cilj da upozna studente sa osnovama MySQL.
-                  </p>
-                  <button onclick="openKrozBazuDoJave()" id='show' class="vidijos">Vidi još...</button>
-                </div>
-              </div>  
-        </div>
-        
-    <!-- Kraj - Radionica 10 -->
-  </div>
-  <!-- Kraj - Radionice - Red -->
-  </div>
-  <!-- Pocetak - Popups -->
-  <!-- Pocetak - dataScience101 - Popup -->
-  <div class="popup" id="dataScience101">
-    <div class="popupspace row">
-      <div class="col-sm-1 col-md-3 popup_levo">
-        <div class="popupphoto">
-            <img src="img/radionica_icon.png" alt="">
-            <br><br>
-            <h3>Data science 101</h3>
-            <br>
-            <p> Neophodno predznanje?                 <br> - Python i srednjoškolska matematika. <br>
-                Da li je potrebno poneti svoj laptop? <br> - Da. <br>
-                Neophodan softver:                    <br> - <a href="https://www.anaconda.com/distribution/#download-section">Anaconda</a>. <br>
-              </p>
-        </div> 
-      </div>
-      <div class="col-sm-1 col-md-9 popup_desno">
-        <div class="popuptext">
-            <button onclick="closeDataScience101()" class="close"><img src="img/close.png" alt="" id="close"></button>
-            <h3>Opis radionice</h3><br>
-            <p>
-                Želite da znate šta je to Data Science u Python-u i upoznate se sa njegovim osnovnim bibliotekama? Na pravom ste putu!
-Upoznavanje sa bibliotekama poput pandas i numpy, kao i bibliotekama za vizuelizaciju matplotlib I seaborn, samo je prvi korak ka Vašoj karijeri. Nakon toga sledi uzbudljiviji deo- kreiramo prvi model uz pomoć najpoznatijih Machine Learning algoritama za klasifikaciju. Naučićemo kako da eveluiramo naše modele I učinimo ih jos boljim, a potom ćemo saznati šta su to Enseble algoritmi kao i problem klasterovanja.
-<br><br>
-            </p>
-            <div class="row">
-              <div class="col-sm-1 col-md-6">
-                <img src="img/predavaci/Siniša Stanivuk - Data Science 101.png" alt="" class="predavaci">
-                <h4>Siniša Stanivuk</h4>
-                <p> Siniša "Stopwolf" Stanivuk je student treće godine Fakulteta organizacionih nauka i Data Scientist u svoje slobodno vreme.
-                    Kombinovanjem svog iskustva volontiranja na Data Science konferenciji i privrženosti matematici i brojevima, znao je da je to prava karijera za njega. Nakon samo 5 meseci učenja, hteo je da testira svoje sposobnosi na Datathon-u na kojem je, zajedno sa Nikolom, osvojio 3. mesto!
-                    U svoje slobodno vreme, voli da čita o produktivnosti i samousavršavanju, ali i da igra košarku i svira bubnjeve.                    
-                </p>
-              </div>
-              <div class="col-sm-1 col-md-6">
-                  <img src="img/predavaci/Nikola Đorđević - Data Science 101.png" alt="" class="predavaci">
-                  <h4> Nikola Đorđević</h4>
-                  <p>   Nikola Đorđević je student treće godine Fakulteta organizacionih nauka i već godinu dana bavi se data science-om samostalno, ali i uz pomoć kolega sa fakulteta. Učestvovao je na ovogodišnjem TeleSign Datathon-u sa timom ljudi među kojima je bio i Siniša.
-                        Još od prve godine fakulteta ga je interesovao data science i šta to tačno on predstavlja, ali isto tako pronašao se još i u grafičkom dizajnu i preduzetništvu.
-                  </p>
-              </div>
-            </div>
-        </div>
-      </div>       
-      </div>
-    </div>
-  <!-- Kraj - dataScience101 - Popup -->
-  <!-- Pocetak - introToJava - Popup -->
-  <div class="popup" id="introToJava">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Intro To Java</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - .<br>
-                  Da li je potrebno poneti svoj laptop?  - . <br>
-                  Neophodan softver:                    <br> - <a href=""> </a> i <a href="">  </a>. <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeIntroToJava()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3></h3><br>
-              <p> 
-              <br><br>
-              </p>
-              <div class="row">
-                <div class="col-sm-1 col-md-12">
-                  <img src="" alt="" class="predavac">
-                  <h4></h4>
-                  <p>
-                    
-                  </p>
-                </div>
-              </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - introToJava - Popup -->
-  <!-- Pocetak - realTimeDataProcessing - Popup -->
-  <div class="popup" id="realTimeDataProcessing">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Real Time Data Processing</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - .<br>
-                  Da li je potrebno poneti svoj laptop?  - . <br>
-                  Neophodan softver:                    <br> - <a href=""> </a> i <a href="">  </a>. <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeRealTimeDataProcessing()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3></h3><br>
-              <p> 
-              <br><br>
-              </p>
-              <div class="row">
-                <div class="col-sm-1 col-md-12">
-                  <img src="" alt="" class="predavac">
-                  <h4></h4>
-                  <p>
-                    
-                  </p>
-                </div>
-              </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - realTimeDataProcessing - Popup -->
-  <!-- Pocetak - introToGraphicDesign - Popup -->
-  <div class="popup" id="introToGraphicDesign">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Intro To Graphic Design</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - Dobro raspoloženje i motivacija!<br>
-                  Da li je potrebno poneti svoj laptop?  - Da. <br>
-                  Neophodan softver:                    <br> - Adobe Illustrator CC i Adobe Photoshop CC. <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeIntroToGraphicDesign()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3>Opis radionice</h3><br>
-              <p> Kreativac si? Ne znaš odakle da kreneš? Srećom, mi znamo!
-                  Na našoj radionici imaćeš prilike da se upoznas sa osnovnim principima grafičkog dizajna 
-                  kroz rad u programima Adobe Photoshop I Adobe Ilustrator. Videćeš u čemu je njihova razlika 
-                  I uživati u njihovoj primeni!                  
-              <br><br>
-              </p>
-              <div class="row">
-                  <div class="col-sm-1 col-md-6">
-                    <img src="img/predavaci/Nemanja Pavlović - Intro to Graphic Design.png" alt="" class="predavaci">
-                    <h4>Nemanja Pavlović</h4>
-                    <p> Dizajn je sve i sve što vidiš je dizajn. On ti daje prliku da stvaraš. Jednom kada udješ 
-                      u taj svet, sve gledaš iz druge perspektive. Moje ime je Nemanja i iako me je dizajn oduvek 
-                      zanimao, njime sam počeo da se bavim konkretnije tek kada sam u prvoj godini pristupio 
-                      studenskim organizacijama. Više volim vektore od piksela, tako da je Illustrator moja alatka. 
-                      Spreman sam da svoje iskustvo podelim sa tobom, tako da, prijavi se da zajedno testiramo 
-                      tvoju kreativnost!
-                    </p>
-                  </div>
-                  <div class="col-sm-1 col-md-6">
-                      <img src="img/predavaci/Stefan Milanovic - Intro to Graphic Design.png" alt="" class="predavaci">
-                      <h4> Stefan Milovanović</h4>
-                      <p> Aktivnije sam počeo da se bavim grafičkim dizajnom od kada sam upisao fakultet. U okviru 
-                        studentskih organizacija sam imao prilike da naučim mnogo od svojih kolega u ovoj sferi i 
-                        baš zato imam želju da to znanje dalje prenesem. Uvek se trudim da budem inovativan kada 
-                        pokušavam da napravim nešto i trudim se da ljude oko mene takođe podstaknem na to. 
-                        Illustrator i Photoshop nam pružaju mnogo mogućnosti da ispoljimo kreativnost, pa zašto to 
-                        i ne bismo uradili?
-                      </p>
-                  </div>
-                </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - introToGraphicDesign - Popup -->
-  <!-- Pocetak - webAppWorkshop - Popup -->
-  <div class="popup" id="webAppWorkshop">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Web App Workshop</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - Ne.<br>
-                  Da li je potrebno poneti svoj laptop?  - Da. <br>
-                  Neophodan softver:                    <br> - <a href="https://code.visualstudio.com/download"> Visual Studio Code</a>. <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeWebAppWorkshop()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3>Opis radionice</h3><br>
-              <p> Hoćeš da napraviš web aplikaciju ali mislis da si “samo” početnik? Dodji I napravi jednu zajedno sa nama!
-                  Naučićemo te svemu osnovnom što treba da znaš i pravac na posao! 
-                  Uspećeš da savladaš proces pravljenja od osnovnog izgleda do funkcionalnosti I uz to se čak I zabavljati. Čekamo te!
-                
-              <br><br>
-              </p>
-              <div class="row">
-                <div class="col-sm-1 col-md-6">
-                  <img src="img/predavaci/Daniel Fazlijević - WebApp workshop.png" alt="" class="predavaci">
-                  <h4>Daniel Fazlijević</h4>
-                  <p> Zdravo, ja sam Daniel, student sam treće godine FON-a i bavim se Web Developmentom. 
-                      Za programiranje se zanimam još od osnovne škole ali tek u srednjoj školi počinjem 
-                      samostalno da učim. Trenutno radim u kompaniji za razvoj softvera, 4bees, kao Full 
-                      Stack Developer. Za sajtove i aplikacije koje razvijam najčešće koristim HTML, CSS 
-                      i Javascript, a omiljeni framework mi je Vue.js. Često za svoje lične projekte volim 
-                      da koristim nove tehnologije, a najčešće Node i Python. Prošle godine sam na S2S 
-                      držao radionicu ‘Od 0 do sajta’ na kojoj sam predavao o osnovama pravljenja modernih 
-                      sajtova, a na ovogodišnjoj ću se više fokusirati na pravljenje Web aplikacija odnosno 
-                      Javascript.
-                  </p>
-                </div>
-                <div class="col-sm-1 col-md-6">
-                    <img src="img/predavaci/Marijana Maksimović - WebApp workshop.png" alt="" class="predavaci">
-                    <h4> Marijana Maksimović</h4>
-                    <p> Student sam treće godine Fakulteta Organizacionih Nauka. 
-                        Programiranje me zanima još od srednje škole, dok se intenzivnije 
-                        bavim Web Developmentom od prve godine fakulteta. Osim toga, bavim se 
-                        i dizajnom, tako da mi je izgled aplikacije ili sajta jako bitan. 
-                        Ove godine na S2S-u ću predavati osnove Web developmenta, HTML i CSS.
-                    </p>
-                </div>
-              </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - webAppWorkshop - Popup -->
-  <!-- Pocetak - vueIsForYou - Popup -->
-  <div class="popup" id="vueIsForYou">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Vue Is For You</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - Poželjno osnovno znanje Javascript-a, HTML-a i CSS-a..<br>
-                  Da li je potrebno poneti svoj laptop?  - Ne. <br>
-                  Neophodan softver:                    <br> - <a href="https://nodejs.org/en/ ">Node.js</a> i <a href="https://vuejs.org/v2/guide/installation.html"> Vue </a>. <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeVueIsForYou()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3>Opis radionice</h3><br>
-              <p> Vue je trenutno najmoderniji framework I sve traženiji, i to upravo sa razlogom zato 
-                sto je brz za učenje I ima puno izvora. Ova radionica će biti I više nego dovoljna da 
-                pokaže pun značaj korišćenja ovog frameworka, ali I da zainteresuje ljude time što ce 
-                videti sša sve potencijalno mogu da naprave sa ovim znanjem.
-                Čak I ako ne planirate da se profesionalno bavite ovim, znanje stečeno na ovoj radionici 
-                će Vam biti jako korisno bar za licnu upotrebu, jer je u svakom poslu potrebna web 
-                aplikacija nekog tipa, pa zasto ne biste znali sami da je napravite?
-              <br><br>
-              </p>
-              <div class="row">
-                <div class="col-sm-1 col-md-12">
-                  <img src="img/predavaci/Mila Cvetković - Vue is for you.png" alt="" class="predavac">
-                  <h4>Mila Cvetković</h4>
-                  <p> Volim da pijem kafu i da pravim stvari, te stvari su za sada sajtovi ali ko zna za dalje. 
-                    Ja sam tip osobe kojoj je uvek potrebna neka zanimacija i neki problem, a kada se bavite 
-                    ovim uvek ćete imati oba, ovog drugog pogotovo. Mislim da je svakome potrebna neka veština 
-                    na kojoj može da radi bez obzira na sve, i to upravo može da bude ovo.
-                  </p>
-                </div>
-              </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - vueIsForYou - Popup -->
-  <!-- Pocetak - sweetGit - Popup -->
-  <div class="popup" id="sweetGit">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Sweet GIT</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - Dobro raspoloženje i entuzijazam.<br>
-                  Da li je potrebno poneti svoj laptop?  - Da. <br>
-                  Neophodan softver:                    <br> - <a href="https://git-scm.com/downloads"> GIT</a>. <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeSweetGit()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3>Opis radionice</h3><br>
-              <p> Na ovoj radionici polaznici će naučiti kako da koriste sistem za verzionisanje koda Git iz komandne linije.. Cilj radionice je da polaznici razumeju suštinu Git-a i sistema za verzionisanje koda uopšte, kako bi stekli čvstu osnovu zbog koje će se osećati sigurno prilikom samostalnog istraživanja Git-a, ali i drugih sistema za verzionisanje koda.
-              <br><br>
-              </p>
-              <div class="row">
-                <div class="col-sm-1 col-md-12">
-                  <img src="img/predavaci/Jelena Milev - Sweet git.png" alt="" class="predavac">
-                  <h4>Jelena Milev</h4>
-                  <p>
-                      Zdravo, moje ime je Jelena, student sam 4. godine ISIT-a i ovogodišnji FONIS-ov Koordinator za upravljanje znanjem. Sa Git-om sam se po prvi put upoznala u 2. godini studija na kursu napredne Jave koji je organizovala Laboratorija za veštačku inteligenciju. Tom prilikom sam naučila da koristim osnovne Git komande iz korisničkog okruženja i na taj način sam koristila Git u radu na narednih nekoliko projekata. Moram priznati da pritom nisam bila sigurna šta će pritisak na koje dugme tačno u pozadini uraditi i par puta sam napravila štetu koju sam morala da popravim koristeći Git iz komadne linije. Stoga sam odlučila da zasučem rukave i pozabavim se suštinom Git-a i njegovih komandi.Na ovoj radionici želim da podelim ono što sam naučila o Git-u i da kolegama u što većoj meri olakšam učenje nečega što je veoma tražena stavka u CV-u. 
-                  </p>
-                </div>
-              </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - sweetGit - Popup -->
-  <!-- Pocetak - introToDjango - Popup -->
-  <div class="popup" id="introToDjango">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Intro To Django</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - Poželjno osnovno znanje Python-a, HTML-a i CSS-a.<br>
-                  Da li je potrebno poneti svoj laptop?  - Ne. <br>
-                  Neophodan softver:                    <br> - Obezbeđen sav neophodan softver (Python i PyCharm). <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeIntroToDjango()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3>Opis radionice</h3><br>
-              <p> Django je jedan od najpopularnijih web framework-a napisan u Python-u. Cilj radionice je 
-                  interaktivno upoznavanje sa Django framework-om. Polaznici ove radionice će imati priliku da,
-                  uz teorijsku osnovu, na praktičnom primeru jednostavne web aplikacije vide prednosti ovog 
-                  framework-a. 
-              <br><br>
-              </p>
-              <div class="row">
-                <div class="col-sm-1 col-md-12">
-                  <img src="img/predavaci/Ana Ristić - Intro to Django.png" alt="" class="predavac">
-                  <h4>Ana Ristić</h4>
-                  <p> Student FON-a koji se sa Django-m prvi put susrela na 4. godini u okviru izbornog predmeta 
-                      na fakultetu, a zatim samostalno nastavila usavršavanje. Cilj mi je da sa ove radionice 
-                      izađete sa više znanja iz ove oblasti nego što ste ušli.
-                  </p>
-                </div>
-              </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - introToDjango - Popup -->
-  <!-- Pocetak - introToC - Popup -->
-  <div class="popup" id="introToC">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Intro To C</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - .<br>
-                  Da li je potrebno poneti svoj laptop?  - . <br>
-                  Neophodan softver:                    <br> - <a href=""> </a> i <a href="">  </a>. <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeIntroToC()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3></h3><br>
-              <p> 
-              <br><br>
-              </p>
-              <div class="row">
-                <div class="col-sm-1 col-md-12">
-                  <img src="" alt="" class="predavac">
-                  <h4></h4>
-                  <p>
-                    
-                  </p>
-                </div>
-              </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - introToC - Popup -->
-  <!-- Pocetak - krozBazuDoJave - Popup -->
-  <div class="popup" id="krozBazuDoJave">
-      <div class="popupspace row">
-        <div class="col-sm-1 col-md-3 popup_levo">
-          <div class="popupphoto">
-              <img src="img/radionica_icon.png" alt="">
-              <br><br>
-              <h3>Kroz Bazu Do Jave</h3>
-              <br>
-              <p> Neophodno predznanje?                 <br> - Osnove Java programiranja.<br>
-                  Da li je potrebno poneti svoj laptop?  - Ne. <br>
-                  Neophodan softver:                    <br> - Netbeans i Wamp(ili xampp). <br>
-                </p>
-          </div>
-        </div>
-        <div class="col-sm-1 col-md-9 popup_desno">
-          <div class="popuptext">
-              <button onclick="closeKrozBazuDoJave()" class="close"><img src="img/close.png" alt="" id="close"></button>
-              <h3>Opis radionice</h3><br>
-              <p> Radionica “Kroz bazu do Jave” ima za cilj da upozna studente sa osnovama MySQL. Pored toga, 
-                studenti će imati priliku da kroz praktične primere sagledaju povezanost baza sa programskim 
-                jezikom Java, manipulaciju podacima, kao I zadavanje direktnih upita za rešavanje istih.
-              <br><br>
-              </p>
-              <div class="row">
-                <div class="col-sm-1 col-md-12">
-                  <img src="img/predavaci/Đorđe Trmčić - Kroz javu do baze.png" alt="" class="predavac">
-                  <h4>Đorđe Trmčić</h4>
-                  <p> Student sam četvrte godine Fakulteta organizacionih nauka na smeru Informacioni sistemi 
-                    I tehnologije. Programiranje sam naučio sam, eksperimentišući.Zatim sam počeo da držim 
-                    privatne časove, gde sam stekao mnogo više iskustva I shvatio neke stvari jos bolje. 
-                    Vrlo sam uporan I kreativan prilikom rešavanja programerskih problema.
-                  </p>
-                </div>
-              </div>
-          </div>
-        </div>       
-        </div>
-      </div>
-  <!-- Kraj - krozBazuDoJave - Popup -->
-  <!-- Kraj - Popups -->
-<!-- Kraj - Radionice -->
-
   <div class="part" id="partneri">
     <h2>Partneri</h2>
     <div class="glide">
@@ -962,18 +1051,12 @@ Upoznavanje sa bibliotekama poput pandas i numpy, kao i bibliotekama za vizueliz
         </ul>
       </div>
     </div>
-
-
   </div>
-
   <div id="tim">
     <div class="team-section">
       <div class="inner-width">
-        <h2>Tim</h2>
+        <h2 class="section-h2">Tim</h2>
         <div class="pers">
-  
-  
-         
             <div class="red2">
                 <img src="img/2.jpg" alt="">
                 <div class="p-name">Kristina Petrović</div>

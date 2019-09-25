@@ -85,4 +85,18 @@
 		$("#nedelja").removeClass("display-none");
 	  });
 
+	  $("#hamburger-icon").click(function(){
+		$(".responsive-menu").toggleClass("responsive-menu-open");
+		$(".responsive-overlay").toggleClass("responsive-overlay-open");
+	  });
+	  $(".rm-link").click(function(){
+		$(".responsive-menu").removeClass("responsive-menu-open");
+		$(".responsive-overlay").removeClass("responsive-overlay-open");
+	  });
+	  $(".responsive-overlay").click(function(){
+		$(".responsive-menu").removeClass("responsive-menu-open");
+		$(".responsive-overlay").removeClass("responsive-overlay-open");
+	  });
+
+
   })();

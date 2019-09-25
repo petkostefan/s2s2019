@@ -5,7 +5,96 @@ html{
 body {
   font-family: "Roboto";
 }
+html {
+  scroll-behavior: smooth;
+}
+.center-text {
+  text-align: center;
+}
+.margin-bottom-radionice {
+  margin-bottom: 30px;
+}
 
+/********* MENI ZA TELEFON *********/
+.responsive-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity:0.6;
+  display: none;
+  z-index: 997;
+}
+#hamburger-icon {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  display: none;
+}
+.responsive-menu {
+  background-color: #005d89;
+  width: 80%;
+  height: 100vh;
+  z-index: 998;
+  position: fixed;
+  left: -80%;
+  transition: 0.25s;
+}
+.responsive-menu-open {
+  left: 0;
+}
+.responsive-overlay-open {
+  display: block;
+}
+.responsive-menu ul li {
+  margin-top: 10px;
+}
+.responsive-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.responsive-menu ul {
+  margin-top: 60px;
+  margin-left: 20px;
+}
+#logo-responsive-menu {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.responsive-menu ul li a:hover {
+  color: #ffa600;
+  transition: 0.2s linear;
+}
+.responsive-menu ul li a::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 1px;
+  transition: all 0.2s linear;
+}
+.responsive-menu ul li a:hover::after {
+  width: 100%;
+  background-color: #ffa600;
+}
+.responsive-navbar {
+  height: 50px;
+  width: 100%;
+  background-color: #005d89;
+  position: fixed;
+  z-index: 996;
+  display: none;
+  box-shadow: -1px 4px 10px 1px rgba(0,0,0,0.3);
+}
+/*********************************/
 .header {
   position: fixed;
   top: 0;
@@ -187,7 +276,7 @@ body {
 /*Pocetak - Radionice*/
 
 #radionice{
-  padding-top: 20px;
+  padding-top: 100px;
   padding-bottom: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -310,7 +399,6 @@ body {
   top: 55px;
   left: 10%;
   height: 50px;
-  width: 200px; 
 }
 
 
@@ -385,6 +473,9 @@ body {
   transition: 0.25s;
 }
 
+.deveta {
+  display: block;
+}
 /*Kraj - Kartice*/
 
 /*Pocetak - Popup */
@@ -400,7 +491,7 @@ body {
   top: 12vh;
   left: 10vw;
   width: 80vw;
-  height: 80vh;
+  height: 85vh;
   justify-content: center;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -436,7 +527,8 @@ body {
   text-align: justify;
   float:left;
   overflow-y: auto;
-  height: 75vh;
+  height: 79vh;
+  min-width: 50vw;
 }
 
 .popup_desno h3 {
@@ -475,12 +567,19 @@ body {
 }
 
 .popupphoto {
-  width: 20vw;
+  width: 25vw;
   height: 35vw;
   left: 0px;
   padding-top: 15px;
   padding-right: 20px;
+  min-width:20vw;
+  min-height: 33vw;
   /* background:  rgb(60, 175, 228); */
+}
+
+.popupphoto img {
+  height: 120px;
+  padding-left: 20%;
 }
 
 .popuptext {
@@ -668,8 +767,6 @@ input:checked + label span:last-child {
   background-color: #e8eff5;
   padding-bottom: 45px;
 }
-.cd-timeline {
-}
 .cd-timeline h2 {
   padding-top: 15px;
   font-size: 20px;
@@ -746,7 +843,92 @@ input:checked + label span:last-child {
   margin-top: 100px;
   padding-top: 80px;
 }
-
+/**************** P A N E L ************************/
+#panel {
+  padding-top: 100px;
+}
+#panel h2{
+  text-align: center;
+  margin-top: 20px;
+}
+.panel-boxes-cont {
+  width: 1100px;
+  left: 50%;
+  position: relative;
+  margin-left: -550px;
+}
+#main-p{
+  text-align: center;
+  padding: 30px 100px 30px 100px;
+}
+.panel-containers {
+  margin-left: 20px;
+  height: 400px;
+  width: 250px;
+  display: inline-block;
+  padding: 20px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.img-circle{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #ececec;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin-left: -70px;
+  overflow: hidden;
+}
+.img-circle img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.underline-panelist {
+  border-top: 2px solid black;
+  margin-top: 10px;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-circle:hover {
+  border-color: #faa830;
+  transition: 0.3s;
+}
+.panel-containers h4 {
+  text-align: center;
+}
+.panel-containers p{
+  font-size: 17px;
+  margin-top: 15px;
+  text-align: center;
+}
+@media only screen and (max-width: 1100px){
+  .panel-boxes-cont {
+    width: 600px;
+    margin-left: -300px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .panel-boxes-cont {
+    width: 250px;
+    left:0;
+    position: relative;
+    left: 50%;
+    margin-left: -125px;
+  }
+  .panel-containers {
+    margin-left: 0px;
+  }
+  #main-p{
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+  }
+}
+/***************************************************/
 /*footer*/
 
 footer {
@@ -825,12 +1007,71 @@ footer {
     margin-right: 0;
     width: 100vw;
   }
+
+  .deveta {
+    display: none;
+  }
+
+  .popup_desno{
+    height: 41vh;
+    border-left: none;
+    border-top: 3px solid white;
+    margin-top: 5px;
+  }
+
+  .popupphoto img {
+    padding-left: 35%;
+    height: 80px;
+  }
+  
+  .predavac, .predavaci {
+    margin-left: 25%;
+  }
+  
+  .popupphoto {
+    width: 100%;
+    min-height: 40vh;
+    height: 50px;
+    padding-top: 0;
+  }
+
+  .popupphoto > p {
+    width: 130%;
+  }
+
+  #particles-js {
+    height: 100%;
+  }
+
 }
 
-#particles-js {
-  height: 100%;
+
+#tim {
+  padding-top: 100px;
+  background-color: #e8eff5;
+}
+.section-h2 {
+  font-size: 40px;
+}
+/********* responzivnost menija i pozadine *******************/
+@media only screen and (max-width: 800px){
+  #hamburger-icon {
+    display: block;
+  }
+  header {
+    display: none;
+  }
+  .responsive-navbar {
+    display: block;
+  }
+  .hero {
+    background-image: url("../img/responsive_pozadina.jpg");
+  }
+  #tim, #radionice, #panel {
+    padding-top: 70px;
+  }
 }
 
-.popupphoto {
-  width: 100%;
-}
+
+
+
