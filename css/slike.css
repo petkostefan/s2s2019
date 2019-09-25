@@ -31,7 +31,6 @@
 }
 .part h2{
     text-align: center;
-    font-size: 20px;
     width:20%;
     border-bottom: 2px solid;
     padding-bottom:10px;
@@ -39,7 +38,8 @@
     margin: auto;
 }
 .part{
-    margin-left:4%;
+   /* margin-left:4%;*/
+    padding-top: 50px;
 }
 @media screen and (max-width:600px) {
     .part img{
@@ -49,6 +49,9 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+    }
+    .part h2 {
+        width: 200px;
     }
   }
 

@@ -4,6 +4,13 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.center-text {
+  text-align: center;
+}
+.margin-bottom-radionice {
+  margin-bottom: 30px;
+}
+
 /********* MENI ZA TELEFON *********/
 .responsive-overlay {
   position: fixed;
@@ -265,7 +272,7 @@ html {
 /*Pocetak - Radionice*/
 
 #radionice{
-  padding-top: 20px;
+  padding-top: 100px;
   padding-bottom: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -756,8 +763,6 @@ input:checked + label span:last-child {
   background-color: #e8eff5;
   padding-bottom: 45px;
 }
-.cd-timeline {
-}
 .cd-timeline h2 {
   padding-top: 15px;
   font-size: 20px;
@@ -835,7 +840,9 @@ input:checked + label span:last-child {
   padding-top: 80px;
 }
 /**************** P A N E L ************************/
-
+#panel {
+  padding-top: 100px;
+}
 #panel h2{
   text-align: center;
   margin-top: 20px;
@@ -1035,6 +1042,13 @@ footer {
 }
 
 
+#tim {
+  padding-top: 100px;
+  background-color: #e8eff5;
+}
+.section-h2 {
+  font-size: 40px;
+}
 /********* responzivnost menija i pozadine *******************/
 @media only screen and (max-width: 800px){
   #hamburger-icon {
@@ -1048,6 +1062,9 @@ footer {
   }
   .hero {
     background-image: url("../img/responsive_pozadina.jpg");
+  }
+  #tim, #radionice, #panel {
+    padding-top: 70px;
   }
 }
 
