@@ -14,15 +14,44 @@ textarea {
     resize: none;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+select{
     font-family: "Roboto";
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #ffa600;
+    border-width: 0;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+select:focus{
+    outline: 0;
 }
 
 h1{
     margin-bottom: 20px;
     margin-top: 50px;
     color: #ffa600;
+    font-weight: 500;
 }
 
+h3{
+    font-size: 15px;
+    font-weight: 100;
+    color: #fff;
+}
+
+h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+}
 
 h4 {
     color: #ffa600;
@@ -34,11 +63,13 @@ h4 {
 .form-control
 {
     width: 600px;
-    background-color: #ffa600b9;
+    background-color: #ffa600;
     outline: none;
     border: 1px solid #ffa600;
+    border-radius: 5px;
     color: #fff;
     font-size: 18px;
+    font-family: "Roboto";
 }
 
 input
@@ -48,14 +79,18 @@ input
     padding-right: 10px;
 }
 
+input::placeholder{
+    color: rgb(223, 223, 223);
+}
+
 form .submit
 {
     background-color: #ffa600;
-    border-color: transparent;
+    border: 1.5px solid #ffa600;
     color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-family: "Roboto";
+    font-size: 1.3em;
+    letter-spacing: 1px;
     height: 50px;
     width: 40%;
     margin-top: 20px;
@@ -66,22 +101,7 @@ form .submit:hover
 {
     color: #ffa600;
     background-color: transparent;
-    border: 1.5px solid #ffa600;
     transition: 0.25s;
-}
-
-h2 {
-    font-size: 20px;
-    color: #fff;
-}
-
-h3 {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 0px;
 }
 
 ::placeholder {
@@ -95,12 +115,137 @@ h3 {
     margin: auto;
 }
 
+/* CHECKBOX */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #ffa600;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* RADIO */
+
+.container2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container2:hover input ~ .checkmark2 {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container2 input:checked ~ .checkmark2 {
+    background-color: #ffa600;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container2 input:checked ~ .checkmark2:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container2 .checkmark2:after {
+       top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
 @media (max-width: 650px){
 
-.content{
+.forma{
     width: 300px;
-    padding: 0%;
-    margin: auto;
 }
 
 h1{
@@ -119,7 +264,7 @@ h2{
     padding: 5px;
 }
 
-.collapsible, .submit {
+.submit {
     width: 300px;
     font-size: 17px;
     padding: 10px;;
