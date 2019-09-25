@@ -752,7 +752,90 @@ input:checked + label span:last-child {
   margin-top: 100px;
   padding-top: 80px;
 }
+/**************** P A N E L ************************/
 
+#panel h2{
+  text-align: center;
+  margin-top: 20px;
+}
+.panel-boxes-cont {
+  width: 1100px;
+  left: 50%;
+  position: relative;
+  margin-left: -550px;
+}
+#main-p{
+  text-align: center;
+  padding: 30px 100px 30px 100px;
+}
+.panel-containers {
+  margin-left: 20px;
+  height: 400px;
+  width: 250px;
+  display: inline-block;
+  padding: 20px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.img-circle{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #ececec;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin-left: -70px;
+  overflow: hidden;
+}
+.img-circle img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.underline-panelist {
+  border-top: 2px solid black;
+  margin-top: 10px;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-circle:hover {
+  border-color: #faa830;
+  transition: 0.3s;
+}
+.panel-containers h4 {
+  text-align: center;
+}
+.panel-containers p{
+  font-size: 17px;
+  margin-top: 15px;
+  text-align: center;
+}
+@media only screen and (max-width: 1100px){
+  .panel-boxes-cont {
+    width: 600px;
+    margin-left: -300px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .panel-boxes-cont {
+    width: 250px;
+    left:0;
+    position: relative;
+    left: 50%;
+    margin-left: -125px;
+  }
+  .panel-containers {
+    margin-left: 0px;
+  }
+  #main-p{
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+  }
+}
+/***************************************************/
 /*footer*/
 
 footer {
