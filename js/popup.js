@@ -33,11 +33,11 @@ const closeDataScience101 = () => {
 
 const openIntroToJava = () => {	          
   document.getElementById("introToJava").style.display = "block";	  
-  open();            	                 
+  openP();            	                 
 };	  
 
 const closeIntroToJava = () => {	       
-  close();   
+  closeP();   
   document.getElementById("introToJava").style.display = "none";	            
 }	
 
@@ -45,11 +45,11 @@ const closeIntroToJava = () => {
 
 const openRealTimeDataProcessing = () => {	          
   document.getElementById("realTimeDataProcessing").style.display = "block";	              	              
-  open();      
+  openP();      
 };	  
 
 const closeRealTimeDataProcessing = () => {	          
-  close();
+  closeP();
   document.getElementById("realTimeDataProcessing").style.display = "none";	            
 }	
 
@@ -57,11 +57,11 @@ const closeRealTimeDataProcessing = () => {
 
 const openIntroToGraphicDesign = () => {	          
   document.getElementById("introToGraphicDesign").style.display = "block";	              	              
-  open();      
+  openP();      
 };	  
 
 const closeIntroToGraphicDesign = () => {	          
-  close();
+  closeP();
   document.getElementById("introToGraphicDesign").style.display = "none";	            
 }
 
@@ -69,11 +69,11 @@ const closeIntroToGraphicDesign = () => {
 
 const openWebAppWorkshop = () => {	          
   document.getElementById("webAppWorkshop").style.display = "block";	              	              
-  open();      
+  openP();      
 };	  
 
 const closeWebAppWorkshop = () => {	          
-  close();
+  closeP();
   document.getElementById("webAppWorkshop").style.display = "none";	            
 }
 
@@ -81,54 +81,54 @@ const closeWebAppWorkshop = () => {
 
 const openVueIsForYou = () => {	          
   document.getElementById("vueIsForYou").style.display = "block";	              	              
-  open();      
+  openP();      
 };	  
 
 const closeVueIsForYou = () => {	          
-  close();
+  closeP();
   document.getElementById("vueIsForYou").style.display = "none";	            
 }
 // Sweet Git
 
 const openSweetGit = () => {	          
   document.getElementById("sweetGit").style.display = "block";	              	              
-  open();      
+  openP();      
 };	  
 
 const closeSweetGit = () => {	          
-  close();
+  closeP();
   document.getElementById("sweetGit").style.display = "none";	            
 }
 // Intro To Django
 
 const openIntroToDjango = () => {	          
   document.getElementById("introToDjango").style.display = "block";	              	              
-  open();      
+  openP();      
 };	  
 
 const closeIntroToDjango = () => {	          
-  close();
+  closeP();
   document.getElementById("introToDjango").style.display = "none";	            
 }
 // Intro To C
 
 const openIntroToC = () => {	          
   document.getElementById("introToC").style.display = "block";	              	              
-  open();      
+  openP();      
 };	  
 
 const closeIntroToC = () => {	          
-  close();
+  closeP();
   document.getElementById("introToC").style.display = "none";	            
 }
 // Kroz Bazu Do Jave
 
 const openKrozBazuDoJave = () => {	          
   document.getElementById("krozBazuDoJave").style.display = "block";	              	              
-  open();      
+  openP();      
 };	  
 
 const closeKrozBazuDoJave = () => {	          
-  close();
+  closeP();
   document.getElementById("krozBazuDoJave").style.display = "none";	            
 }
