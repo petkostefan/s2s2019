@@ -909,6 +909,7 @@ input:checked + label span:last-child {
     width: 600px;
     margin-left: -300px;
   }
+
 }
 @media only screen and (max-width: 700px){
   .panel-boxes-cont {
@@ -925,6 +926,8 @@ input:checked + label span:last-child {
     text-align: center;
     padding: 30px 20px 30px 20px;
   }
+
+  
 }
 /***************************************************/
 /*footer*/
@@ -978,6 +981,10 @@ footer {
     height: 20px;
     width: 200px;	    
     /* border-radius: 50%; */
+  }
+
+  .hero{
+    margin-top: -50px !important;
   }
 
   /* #radionice {
