@@ -2,14 +2,14 @@ window.addEventListener('scroll', () => {
   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);	            
 });	  
 
-function open(){
+function openP(){
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;	           
   body.style.overflow = 'hidden';	              
   body.style.top = `-${scrollY}`;	  
 }
 
-function close(){
+function closeP(){
   const body = document.body;	           
   const scrollY = body.style.top;	           
   body.style.overflow = 'initial';	           
@@ -21,11 +21,11 @@ function close(){
 
 const openDataScience101 = () => {	          
     document.getElementById("dataScience101").style.display = "block"; 
-    open();            	                 
+    openP();            	                 
 };	  
 
 const closeDataScience101 = () => {	       
-    close();   
+    closeP();   
     document.getElementById("dataScience101").style.display = "none";	            
 }	
 
