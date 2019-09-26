@@ -40,8 +40,8 @@
 }
 
 .accordion a::after {
-  font-family: "Ionicons";
-  content: "\f218";
+  font-family: "Roboto";
+  content: "+";
   position: absolute;
   float: right;
   right: 1rem;
@@ -58,8 +58,8 @@
 }
 
 .accordion a.active::after {
-  font-family: "Ionicons";
-  content: "\f209";
+  font-family: "Roboto";
+  content: "-";
   color: #03b5d2;
   border: 1px solid #03b5d2;
 }
