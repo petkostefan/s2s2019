@@ -752,8 +752,6 @@ input:checked + label span:last-child {
 
 #projekat {
   padding-top: 100px;
-  padding-left: 40px;
-  padding-right: 40px;
   font-size: 20px;
   color: #636363;
 }
@@ -911,6 +909,7 @@ input:checked + label span:last-child {
     width: 600px;
     margin-left: -300px;
   }
+
 }
 @media only screen and (max-width: 700px){
   .panel-boxes-cont {
@@ -927,6 +926,8 @@ input:checked + label span:last-child {
     text-align: center;
     padding: 30px 20px 30px 20px;
   }
+
+  
 }
 /***************************************************/
 /*footer*/
@@ -980,6 +981,10 @@ footer {
     height: 20px;
     width: 200px;	    
     /* border-radius: 50%; */
+  }
+
+  .hero{
+    margin-top: -50px !important;
   }
 
   /* #radionice {
@@ -1064,8 +1069,11 @@ footer {
   .responsive-navbar {
     display: block;
   }
+
+  
   .hero {
     background-image: url("../img/responsive_pozadina.jpg");
+    margin-top: -50px !important;
   }
   #tim, #radionice, #panel {
     padding-top: 70px;

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/prijava.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Prijava</title>
 </head>
 
@@ -19,19 +19,19 @@
 
     <form name="submit-to-google-sheet">
         <div class="forma">
-            <h2>Vaš e-mail:</h2>
+            <h2>Vaš e-mail: <span class="star" >*</span></h2>
             <input id="aaa" name="email" type="text" class="form-control aaa">
-            <h2>Vaš broj telefona:</h2>
+            <h2>Vaš broj telefona: <span class="star" >*</span></h2>
             <input type="text" name="broj-telefona"
                 placeholder="Vaš broj telefona će se koristiti isključivo za slanje obaveštenja u vezi sa S2S-om"
                 class="form-control">
-            <h2>Vaše ime i prezime:</h2>
+            <h2>Vaše ime i prezime: <span class="star" >*</span></h2>
             <input id="aaa" name="ime-prezime" type="text" class="form-control aaa">
-            <h2>Fakultet koji studirate:</h2>
+            <h2>Fakultet koji studirate: <span class="star" >*</span></h2>
             <input id="aaa" name="fakultet" type="text" class="form-control aaa">
-            <h2>Vaša trenutna godina studija:</h2>
-            <select name="godina-studija">
-                <option disabled selected value>- Izaberite godinu -</option>
+            <h2>Vaša trenutna godina studija: <span class="star" >*</span></h2>
+            <select id="god" name="godina-studija">
+                <option disabled selected value="- Izaberite godinu -" >- Izaberite godinu -</option>
                 <option value="prva">Prva</option>
                 <option value="druga">Druga</option>
                 <option value="treca">Treća</option>
@@ -39,7 +39,7 @@
                 <option value="master">Master</option>
                 <option value="drugo">Drugo</option>
             </select>
-            <h2>Kako ste čuli za projekat?</h2>
+            <h2>Kako ste čuli za projekat? <span class="star" >*</span></h2>
 
             <label class="container">Na Open Day-u
                 <input class="jedan" value="open day" type="checkbox">
@@ -92,30 +92,30 @@
 
             <input id="projekat" name="kako-ste-culi-za-projekat" type="text" style="display: none">
 
-            <h2>Da li ste u mogućnosti da ponesete laptop?</h2>
+            <h2>Da li ste u mogućnosti da ponesete laptop? <span class="star" >*</span></h2>
             <h3>Za neke radionice je laptop neophodan.</h3>
 
-            <label class="container2">Da
-                <input type="radio" value="Da" name="laptop">
+            <label class="container">Da
+                <input class="dva" type="radio" value="Da" name="laptop">
                 <span class="checkmark2"></span>
             </label>
-            <label class="container2">Ne
-                <input type="radio" value="Ne" name="laptop">
-                <span class="checkmark2"></span>
-            </label>
-
-            <h2>Da li ste ranije učestvovali na S2S-u?</h2>
-
-            <label class="container2">Da
-                <input type="radio" value="Da" name="da-li-ste-ranije-učestvovali">
-                <span class="checkmark2"></span>
-            </label>
-            <label class="container2">Ne
-                <input type="radio" value="Ne" name="da-li-ste-ranije-učestvovali">
+            <label class="container">Ne
+                <input class="dva" type="radio" value="Ne" name="laptop">
                 <span class="checkmark2"></span>
             </label>
 
-            <h2>U slučaju da je odgovor na prethodno pitanje "Da", koliko ste do sada puta učestvovali?</h2>
+            <h2>Da li ste ranije učestvovali na S2S-u? <span class="star" >*</span></h2>
+
+            <label class="container">Da
+                <input class="tri" type="radio" value="Da" name="da-li-ste-ranije-učestvovali">
+                <span class="checkmark2"></span>
+            </label>
+            <label class="container">Ne
+                <input class="tri" type="radio" value="Ne" name="da-li-ste-ranije-učestvovali">
+                <span class="checkmark2"></span>
+            </label>
+
+            <h2>U slučaju da je odgovor na prethodno pitanje "Da", koliko ste do sada puta učestvovali? <span class="star" >*</span></h2>
 
             <select name="koliko-puta">
                 <option disabled selected value>- Koliko puta -</option>
@@ -126,98 +126,98 @@
                 <option value="cetvrta">Četiri i više</option>
             </select>
 
-            <h2>Za koji kurs se prijavljujete?</h2>
+            <h2>Za koji kurs se prijavljujete? <span class="star" >*</span></h2>
 
-            <label class="container2">Java - Around the world
-                <input type="radio" value="Java - Around the world" name="za-koji-kurs-se-prijavljujete">
+            <label class="container">Java - Around the world
+                <input class="cetiri" type="radio" value="Java - Around the world" name="za-koji-kurs-se-prijavljujete">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">The art of leadership
-                <input type="radio" value="The art of leadership" name="za-koji-kurs-se-prijavljujete">
+            <label class="container">The art of leadership
+                <input class="cetiri" type="radio" value="The art of leadership" name="za-koji-kurs-se-prijavljujete">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">Java - Uvod u javu
-                <input type="radio" value="Java - Uvod u javu" name="za-koji-kurs-se-prijavljujete">
+            <label class="container">Java - Uvod u javu
+                <input class="cetiri" type="radio" value="Java - Uvod u javu" name="za-koji-kurs-se-prijavljujete">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">Od 0 do sajta
-                <input type="radio" value="Od 0 do sajta" name="za-koji-kurs-se-prijavljujete">
+            <label class="container">Od 0 do sajta
+                <input class="cetiri" type="radio" value="Od 0 do sajta" name="za-koji-kurs-se-prijavljujete">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">Cypher
-                <input type="radio" value="Cypher" name="za-koji-kurs-se-prijavljujete">
+            <label class="container">Cypher
+                <input class="cetiri" type="radio" value="Cypher" name="za-koji-kurs-se-prijavljujete">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">Vanilica
-                <input type="radio" value="Vanilica" name="za-koji-kurs-se-prijavljujete">
+            <label class="container">Vanilica
+                <input class="cetiri" type="radio" value="Vanilica" name="za-koji-kurs-se-prijavljujete">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">Osnove C-a
-                <input type="radio" value="Osnove C-a" name="za-koji-kurs-se-prijavljujete">
+            <label class="container">Osnove C-a
+                <input class="cetiri" type="radio" value="Osnove C-a" name="za-koji-kurs-se-prijavljujete">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">Data mining
-                <input type="radio" value="Data mining" name="za-koji-kurs-se-prijavljujete">
+            <label class="container">Data mining
+                <input class="cetiri" type="radio" value="Data mining" name="za-koji-kurs-se-prijavljujete">
                 <span class="checkmark2"></span>
             </label>
 
-            <h2>Zašto ste izabrali baš ovaj kurs?</h2>
+            <h2>Zašto ste izabrali baš ovaj kurs? <span class="star" >*</span></h2>
 
             <input id="aaa" name="zašto-ste-izabrali-ovaj-kurs" type="text" class="form-control aaa">
 
-            <h2>Šta očekujete od ovog projekta?</h2>
+            <h2>Šta očekujete od ovog projekta? <span class="star" >*</span></h2>
 
             <input id="aaa" name="šta-očekujete-od-ovog-projekta" type="text" class="form-control aaa">
 
-            <h2>Alternativni kurs</h2>
+            <h2>Alternativni kurs <span class="star" >*</span></h2>
             <h3>U slučaju da ne budemo u mogućnosti da Vam obezbedimo mesto za Vaš prvi izbor, molimo Vas da odaberete
                 drugi kurs koji biste želeli da pratite</h3>
 
-            <label class="container2">Java - Around the world
-                <input type="radio" value="Java - Around the world" name="alternativni-kurs">
+            <label class="container">Java - Around the world
+                <input class="pet" type="radio" value="Java - Around the world" name="alternativni-kurs">
                 <span class="checkmark2"></span>
             </label>
-            <label class="container2">The art of leadership
-                <input type="radio" value="The art of leadership" name="alternativni-kurs">
-                <span class="checkmark2"></span>
-            </label>
-
-            <label class="container2">Java - Uvod u javu
-                <input type="radio" value="Java - Uvod u javu" name="alternativni-kurs">
-                <span class="checkmark2"></span>
-            </label>
-            <label class="container2">Od 0 do sajta
-                <input type="radio" value="Od 0 do sajta" name="alternativni-kurs">
+            <label class="container">The art of leadership
+                <input class="pet" type="radio" value="The art of leadership" name="alternativni-kurs">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">Cypher
-                <input type="radio" value="Cypher" name="alternativni-kurs">
+            <label class="container">Java - Uvod u javu
+                <input class="pet" type="radio" value="Java - Uvod u javu" name="alternativni-kurs">
                 <span class="checkmark2"></span>
             </label>
-            <label class="container2">Vanilica
-                <input type="radio" value="Vanilica" name="alternativni-kurs">
-                <span class="checkmark2"></span>
-            </label>
-
-            <label class="container2">Osnove C-a
-                <input type="radio" value="Osnove C-a" name="alternativni-kurs">
+            <label class="container">Od 0 do sajta
+                <input class="pet" type="radio" value="Od 0 do sajta" name="alternativni-kurs">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container2">Data mining
-                <input type="radio" value="Data mining" name="alternativni-kurs">
+            <label class="container">Cypher
+                <input class="pet" type="radio" value="Cypher" name="alternativni-kurs">
+                <span class="checkmark2"></span>
+            </label>
+            <label class="container">Vanilica
+                <input class="pet" type="radio" value="Vanilica" name="alternativni-kurs">
                 <span class="checkmark2"></span>
             </label>
 
-            <h2>Zašto ste izabrali ovaj kurs kao alternativu?</h2>
+            <label class="container">Osnove C-a
+                <input class="pet" type="radio" value="Osnove C-a" name="alternativni-kurs">
+                <span class="checkmark2"></span>
+            </label>
+
+            <label class="container">Data mining
+                <input class="pet" type="radio" value="Data mining" name="alternativni-kurs">
+                <span class="checkmark2"></span>
+            </label>
+
+            <h2>Zašto ste izabrali ovaj kurs kao alternativu? <span class="star" >*</span></h2>
 
             <input id="aaa" name="zašto-ste-izabrali-ovaj-kurs-kao-alternativu" type="text" class="form-control aaa">
 
@@ -225,14 +225,14 @@
 
             <input name="link-do-CV" type="text" class="form-control">
 
-            <h2>Da li želite da dobijate obaveštenja o drugim FONIS projektima i slične vesti?</h2>
+            <h2>Da li želite da dobijate obaveštenja o drugim FONIS projektima i slične vesti? <span class="star" >*</span></h2>
 
-            <label class="container2">Da
-                <input type="radio" value="Da" name="da-li-želite-da-dobijate-obaveštenja">
+            <label class="container">Da
+                <input class="sest" type="radio" value="Da" name="da-li-želite-da-dobijate-obaveštenja">
                 <span class="checkmark2"></span>
             </label>
-            <label class="container2">Ne
-                <input type="radio" value="Ne" name="da-li-želite-da-dobijate-obaveštenja">
+            <label class="container">Ne
+                <input class="sest" type="radio" value="Ne" name="da-li-želite-da-dobijate-obaveštenja">
                 <span class="checkmark2"></span>
             </label>
 
@@ -278,6 +278,28 @@
             document.getElementById('projekat').value = tekst;
         }
 
+        // function proveraSelection(ime, vrednost){
+        //     var pocetna = document.getElementsByName(ime)[0].value;
+        //     if (pocetna == vrednost) {
+        //         return false;
+        //         }
+        //     else{
+        //         return true;
+        //     }
+        // }
+
+        function  proveraCheckbox(ime) {
+            var list = document.querySelectorAll(ime);
+
+            for(var element of list){
+                if(element.checked){
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         function prijava() {
             var gotovo = true;
             var list = document.querySelectorAll('.aaa');
@@ -287,10 +309,28 @@
                     break;
                 }
             }
+            if(gotovo){
+                gotovo = proveraCheckbox('.jedan');
+            }
+            if(gotovo){
+                gotovo = proveraCheckbox('.dva');
+            }
+            if(gotovo){
+                gotovo = proveraCheckbox('.tri');
+            }
+            if(gotovo){
+                gotovo = proveraCheckbox('.cetiri');
+            }
+            if(gotovo){
+                gotovo = proveraCheckbox('.pet');
+            }
+            if(gotovo){
+                gotovo = proveraCheckbox('.sest');
+            }
             if (gotovo) {
-                potvrda();
                 checkbox(prvi);
-                document.getElementById('dugme').style.display = 'none'
+                potvrda();
+                document.getElementById('dugme').style.display = 'none';
 
                 Swal.fire({
                     text: 'Uspešno ste se prijavili!',
