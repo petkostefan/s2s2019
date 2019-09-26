@@ -1069,8 +1069,11 @@ footer {
   .responsive-navbar {
     display: block;
   }
+
+  
   .hero {
     background-image: url("../img/responsive_pozadina.jpg");
+    margin-top: -50px !important;
   }
   #tim, #radionice, #panel {
     padding-top: 70px;
