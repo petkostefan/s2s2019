@@ -7,7 +7,7 @@ function openP(){
   const body = document.body;	           
   body.style.overflow = 'hidden';	 
   body.style.position = 'fixed';
-  body.style.height = '100%';
+  body.style.height = '100vh';
   body.style.top = `-${scrollY}`;	  
 
 }
