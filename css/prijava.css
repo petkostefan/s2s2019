@@ -3,11 +3,14 @@ body{
     padding: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background: 
+    background:
     radial-gradient(       
         rgba(0, 93, 137),
         rgba(0, 93, 137)
     );
+}
+#particles-js {
+  height: 100%;
 }
 
 textarea {
