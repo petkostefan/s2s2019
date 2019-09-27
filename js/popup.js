@@ -6,8 +6,6 @@ function openP(){
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;	           
   body.style.overflow = 'hidden';	 
-  body.style.position = 'fixed';
-  body.style.height = '100vh';
   body.style.top = `-${scrollY}`;	  
 
 }
@@ -16,7 +14,6 @@ function closeP(){
   const body = document.body;	           
   const scrollY = body.style.top;	           
   body.style.overflow = 'initial';	
-  body.style.position = 'initial';
   body.style.top = '';            
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
 }
