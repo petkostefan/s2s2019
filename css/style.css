@@ -274,6 +274,10 @@ html {
 }
 
 /*Pocetak - Radionice*/
+.pozadinaRadionica {
+  background-color: #e8eff5;
+
+}
 
 #radionice{
   padding-top: 100px;
@@ -517,6 +521,7 @@ html {
 }
 
 .popup_levo p{
+  padding-top: 20px;
   padding-right: 25px;
   padding-left: 10px;
 }
@@ -567,19 +572,20 @@ html {
 }
 
 .popupphoto {
-  width: 25vw;
+  width: 18vw;
   height: 35vw;
   left: 0px;
   padding-top: 15px;
   padding-right: 20px;
-  min-width:20vw;
-  min-height: 33vw;
+  min-width:18vw;
+  min-height: 30vw;
   /* background:  rgb(60, 175, 228); */
 }
 
 .popupphoto img {
   height: 120px;
   padding-left: 20%;
+  padding-bottom: 20px;
 }
 
 .popuptext {
@@ -588,9 +594,12 @@ html {
   padding-left: 20x;
 }
 .close {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   padding-left: 850px;
+  position: relative;
+  top: -80vh;
+  right: 1vh;
 }
 /*Kraj - Popup */
 
@@ -1013,16 +1022,21 @@ footer {
     display: none;
   }
 
+  .popup {
+    transform: translate(0, -8vh);
+    height: 92vh;
+  }
+
   .popup_desno{
-    height: 41vh;
+    height: 52vh;
     border-left: none;
     border-top: 3px solid white;
     margin-top: 5px;
   }
 
   .popupphoto img {
-    padding-left: 35%;
-    height: 80px;
+    padding-left: 40%;
+    height: 60px;
   }
   
   .predavac, .predavaci {
@@ -1030,14 +1044,23 @@ footer {
   }
   
   .popupphoto {
-    width: 100%;
-    min-height: 40vh;
-    height: 50px;
+    width: 60vh;
+    min-height: 30vh;
+    height: 35vh;
     padding-top: 0;
   }
 
   .popupphoto > p {
-    width: 130%;
+  padding-top: 20px;
+  }
+
+  .close {
+    width: 25px;
+    height: 25px;
+    padding-left: 850px;
+    position: relative;
+    top: -87vh;
+    right: 1vh;
   }
 
   #particles-js {
