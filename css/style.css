@@ -974,17 +974,13 @@ footer {
 }
 
 /*************************************************************/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 813px) {
 .kartica:hover .sestougao {
     top: 55px;
     left: 15%;
     height: 20px;
     width: 200px;	    
     /* border-radius: 50%; */
-  }
-
-  .hero{
-    margin-top: -50px !important;
   }
 
   /* #radionice {
@@ -1069,16 +1065,26 @@ footer {
   .responsive-navbar {
     display: block;
   }
-
   
   .hero {
     background-image: url("../img/responsive_pozadina.jpg");
-    margin-top: -50px !important;
   }
+
+  /* .btn-prijava{
+    margin-top: -850px;
+  } */
+
   #tim, #radionice, #panel {
     padding-top: 70px;
   }
 }
+
+/* @media only screen and (max-width: 741px){
+  .btn-prijava{
+    margin-top: -750px;
+  }
+} */
+
 
 
 
