@@ -119,6 +119,33 @@ form .submit:hover
   color: red;
 }
 
+/* TOOLTIP */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #ffa600;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-left: 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.container:hover .tooltiptext {
+  visibility: visible;
+}
+
 /* CHECKBOX */
 
 label{

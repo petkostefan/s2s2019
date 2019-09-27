@@ -19,19 +19,18 @@
 
     <form name="submit-to-google-sheet">
         <div class="forma">
-            <h2>Vaš e-mail: <span class="star" >*</span></h2>
+            <h2>Vaš e-mail: <span class="star">*</span></h2>
             <input id="aaa" name="email" type="text" class="form-control aaa">
-            <h2>Vaš broj telefona: <span class="star" >*</span></h2>
-            <input type="text" name="broj-telefona"
-                placeholder="Vaš broj telefona će se koristiti isključivo za slanje obaveštenja u vezi sa S2S-om"
-                class="form-control">
-            <h2>Vaše ime i prezime: <span class="star" >*</span></h2>
+            <h2>Vaš broj telefona: <span class="star">*</span></h2>
+            <h3>Vaš broj telefona će se koristiti isključivo za slanje obaveštenja u vezi sa S2S-om</h3>
+            <input type="text" name="broj-telefona" class="form-control">
+            <h2>Vaše ime i prezime: <span class="star">*</span></h2>
             <input id="aaa" name="ime-prezime" type="text" class="form-control aaa">
-            <h2>Fakultet koji studirate: <span class="star" >*</span></h2>
+            <h2>Fakultet koji studirate: <span class="star">*</span></h2>
             <input id="aaa" name="fakultet" type="text" class="form-control aaa">
-            <h2>Vaša trenutna godina studija: <span class="star" >*</span></h2>
+            <h2>Vaša trenutna godina studija: <span class="star">*</span></h2>
             <select id="god" name="godina-studija">
-                <option disabled selected value="- Izaberite godinu -" >- Izaberite godinu -</option>
+                <option disabled selected value="- Izaberite godinu -">- Izaberite godinu -</option>
                 <option value="prva">Prva</option>
                 <option value="druga">Druga</option>
                 <option value="treca">Treća</option>
@@ -39,7 +38,7 @@
                 <option value="master">Master</option>
                 <option value="drugo">Drugo</option>
             </select>
-            <h2>Kako ste čuli za projekat? <span class="star" >*</span></h2>
+            <h2>Kako ste čuli za projekat? <span class="star">*</span></h2>
 
             <label class="container">Na Open Day-u
                 <input class="jedan" value="open day" type="checkbox">
@@ -90,9 +89,9 @@
                 <span class="checkmark"></span>
             </label>
 
-            <input id="projekat" name="kako-ste-culi-za-projekat" type="text" style="display: none">
+            <input id="projekat" name="kako-ste-čuli-za-projekat" type="text" style="display: none">
 
-            <h2>Da li ste u mogućnosti da ponesete laptop? <span class="star" >*</span></h2>
+            <h2>Da li ste u mogućnosti da ponesete laptop? <span class="star">*</span></h2>
             <h3>Za neke radionice je laptop neophodan.</h3>
 
             <label class="container">Da
@@ -104,7 +103,7 @@
                 <span class="checkmark2"></span>
             </label>
 
-            <h2>Da li ste ranije učestvovali na S2S-u? <span class="star" >*</span></h2>
+            <h2>Da li ste ranije učestvovali na S2S-u? <span class="star">*</span></h2>
 
             <label class="container">Da
                 <input class="tri" type="radio" value="Da" name="da-li-ste-ranije-učestvovali">
@@ -115,7 +114,8 @@
                 <span class="checkmark2"></span>
             </label>
 
-            <h2>U slučaju da je odgovor na prethodno pitanje "Da", koliko ste do sada puta učestvovali? <span class="star" >*</span></h2>
+            <h2>U slučaju da je odgovor na prethodno pitanje "Da", koliko ste do sada puta učestvovali? <span
+                    class="star">*</span></h2>
 
             <select name="koliko-puta">
                 <option disabled selected value>- Koliko puta -</option>
@@ -126,113 +126,148 @@
                 <option value="cetvrta">Četiri i više</option>
             </select>
 
-            <h2>Za koji kurs se prijavljujete? <span class="star" >*</span></h2>
+            <h2>Odaberite najviše dve radionice na kojima biste želeli da učestvujete <span class="star">*</span></h2>
+            <h3>Skrećemo Vam pažnju da zbog velikog interesovanja koje je svake godine prisutno za S2S, možda nećemo
+                biti u mogućnosti
+                da Vam obezbedimo učešće na radionici ukoliko budete označili samo jednu. Zato, ukoliko Vas interesuje
+                više tema, čekirajte
+                dve radionice i time povećajte svoje šanse da obezbedite mesto na najboljem S2S-u do sada.</h3>
+
 
             <label class="container">Java - Around the world
-                <input class="cetiri" type="radio" value="Java - Around the world" name="za-koji-kurs-se-prijavljujete">
-                <span class="checkmark2"></span>
+                <input class="cetiri" type="checkbox" value="Java - Around the world">
+                <span class="checkmark"></span>
+                <span class="tooltiptext">Težina: 7/10 Laptop: Da
+                </span>
             </label>
-
             <label class="container">The art of leadership
-                <input class="cetiri" type="radio" value="The art of leadership" name="za-koji-kurs-se-prijavljujete">
-                <span class="checkmark2"></span>
+                <input class="cetiri" type="checkbox" value="The art of leadership">
+                <span class="checkmark"></span>
+                <span class="tooltiptext">Težina: 0/10 Laptop: Ne
+                </span>
             </label>
 
             <label class="container">Java - Uvod u javu
-                <input class="cetiri" type="radio" value="Java - Uvod u javu" name="za-koji-kurs-se-prijavljujete">
-                <span class="checkmark2"></span>
+                <input class="cetiri" type="checkbox" value="Java - Uvod u javu">
+                <span class="checkmark"></span>
+                <span class="tooltiptext">Težina: 4/10 Laptop: Ne
+                </span>
             </label>
-
             <label class="container">Od 0 do sajta
-                <input class="cetiri" type="radio" value="Od 0 do sajta" name="za-koji-kurs-se-prijavljujete">
-                <span class="checkmark2"></span>
+                <input class="cetiri" type="checkbox" value="Od 0 do sajta">
+                <span class="checkmark"></span>
+                <span class="tooltiptext">Težina: 2/10 Laptop: Ne
+                </span>
             </label>
 
             <label class="container">Cypher
-                <input class="cetiri" type="radio" value="Cypher" name="za-koji-kurs-se-prijavljujete">
-                <span class="checkmark2"></span>
+                <input class="cetiri" type="checkbox" value="Cypher">
+                <span class="checkmark"></span>
+                <span class="tooltiptext">Težina: 9/10 Laptop: Da
+                </span>
             </label>
-
             <label class="container">Vanilica
-                <input class="cetiri" type="radio" value="Vanilica" name="za-koji-kurs-se-prijavljujete">
-                <span class="checkmark2"></span>
+                <input class="cetiri" type="checkbox" value="Vanilica">
+                <span class="checkmark"></span>
+                <span class="tooltiptext">Težina: 7/10 Laptop: Ne
+                </span>
             </label>
 
             <label class="container">Osnove C-a
-                <input class="cetiri" type="radio" value="Osnove C-a" name="za-koji-kurs-se-prijavljujete">
-                <span class="checkmark2"></span>
+                <input class="cetiri" type="checkbox" value="Osnove C-a">
+                <span class="checkmark"></span>
+                <span class="tooltiptext">Težina: 5/10 Laptop: Ne
+                </span>
             </label>
 
             <label class="container">Data mining
-                <input class="cetiri" type="radio" value="Data mining" name="za-koji-kurs-se-prijavljujete">
-                <span class="checkmark2"></span>
+                <input class="cetiri" type="checkbox" value="Data mining">
+                <span class="checkmark"></span>
+                <span class="tooltiptext">Težina: 5/10 Laptop: Da
+                </span>
             </label>
 
-            <h2>Zašto ste izabrali baš ovaj kurs? <span class="star" >*</span></h2>
+            <input id="radionice" name="izabrane-radionice" type="text" style="display: none">
 
-            <input id="aaa" name="zašto-ste-izabrali-ovaj-kurs" type="text" class="form-control aaa">
+            <h2 id="prviKurs">Kojom ocenom biste ocenili zainteresovanost za prvu čekiranu radionicu? Šta Vas je
+                motivisalo da odaberete baš ovu radionicu? <span class="star">*</span></h2>
+            <h3>Želimo da čujemo Vaš cilj, motiv i ideju sa kojom se prijavljujete baš za odabranu radionicu. Zašto
+                ste baš Vi pravi delegat za odabranu temu?</h3>
 
-            <h2>Šta očekujete od ovog projekta? <span class="star" >*</span></h2>
+            <input id="aaa" name="zašto-ste-izabrali-prvi-kurs" type="text" class="form-control aaa">
+
+            <h2 id="drugiKurs">Kojom ocenom biste ocenili zainteresovanost za drugu čekiranu radionicu? Šta Vas je
+                motivisalo da odaberete baš ovu radionicu?</h2>
+            <h3>Želimo da čujemo Vaš cilj, motiv i ideju sa kojom se prijavljujete baš za odabranu radionicu. Zašto
+                ste baš Vi pravi delegat za odabranu temu?</h3>
+
+            <input name="zašto-ste-izabrali-drugi-kurs" type="text" class="form-control">
+
+            <h2>Šta očekujete od ovog projekta? <span class="star">*</span></h2>
 
             <input id="aaa" name="šta-očekujete-od-ovog-projekta" type="text" class="form-control aaa">
 
-            <h2>Alternativni kurs <span class="star" >*</span></h2>
-            <h3>U slučaju da ne budemo u mogućnosti da Vam obezbedimo mesto za Vaš prvi izbor, molimo Vas da odaberete
-                drugi kurs koji biste želeli da pratite</h3>
+            <h2>Da li ste saglasni da budete ubačeni u Whats up ili Viber grupu koje će biti aktivna pred i u toku samog
+                projekta i služiće za bržu i jednostavniju komunikaciju i širenje informacija? <span
+                    class="star">*</span></h2>
 
-            <label class="container">Java - Around the world
-                <input class="pet" type="radio" value="Java - Around the world" name="alternativni-kurs">
+            <label class="container">Da, koristim Whats up
+                <input class="pet" type="radio" value="Da, koristim Whats up"
+                    name="da-li-želite-da-budete-ubačeni-u-grupu">
                 <span class="checkmark2"></span>
             </label>
-            <label class="container">The art of leadership
-                <input class="pet" type="radio" value="The art of leadership" name="alternativni-kurs">
+            <label class="container">Da, koristim Viber
+                <input class="pet" type="radio" value="Da, koristim Viber"
+                    name="da-li-želite-da-budete-ubačeni-u-grupu">
                 <span class="checkmark2"></span>
             </label>
-
-            <label class="container">Java - Uvod u javu
-                <input class="pet" type="radio" value="Java - Uvod u javu" name="alternativni-kurs">
-                <span class="checkmark2"></span>
-            </label>
-            <label class="container">Od 0 do sajta
-                <input class="pet" type="radio" value="Od 0 do sajta" name="alternativni-kurs">
+            <label class="container">Ne želim da učestvujem u ovom vidu komunikacije
+                <input class="pet" type="radio" value="Ne" name="da-li-želite-da-budete-ubačeni-u-grupu">
                 <span class="checkmark2"></span>
             </label>
 
-            <label class="container">Cypher
-                <input class="pet" type="radio" value="Cypher" name="alternativni-kurs">
-                <span class="checkmark2"></span>
-            </label>
-            <label class="container">Vanilica
-                <input class="pet" type="radio" value="Vanilica" name="alternativni-kurs">
-                <span class="checkmark2"></span>
-            </label>
-
-            <label class="container">Osnove C-a
-                <input class="pet" type="radio" value="Osnove C-a" name="alternativni-kurs">
-                <span class="checkmark2"></span>
-            </label>
-
-            <label class="container">Data mining
-                <input class="pet" type="radio" value="Data mining" name="alternativni-kurs">
-                <span class="checkmark2"></span>
-            </label>
-
-            <h2>Zašto ste izabrali ovaj kurs kao alternativu? <span class="star" >*</span></h2>
-
-            <input id="aaa" name="zašto-ste-izabrali-ovaj-kurs-kao-alternativu" type="text" class="form-control aaa">
-
-            <h2>U Slučaju da želite, možete nam priložiti link do svog CV-a:</h2>
-
-            <input name="link-do-CV" type="text" class="form-control">
-
-            <h2>Da li želite da dobijate obaveštenja o drugim FONIS projektima i slične vesti? <span class="star" >*</span></h2>
+            <h2>Da li želite da budete gost na panel diskusiji sa temom Moj put u IT-u (radni naziv), koja će se održati
+                drugog dana projekta, pre početka radionica? Učesnici su studenti i diplomci koji su posle, i u toku
+                formalnog obrazovanja na različite načine probijali put u IT industriji. Govoriće o tome kako su
+                odabrali sveru kojom se bave, kao i o prednostima i manama iste. <span class="star">*</span></h2>
 
             <label class="container">Da
-                <input class="sest" type="radio" value="Da" name="da-li-želite-da-dobijate-obaveštenja">
+                <input class="sest" type="radio" value="Da" name="panel">
                 <span class="checkmark2"></span>
             </label>
             <label class="container">Ne
-                <input class="sest" type="radio" value="Ne" name="da-li-želite-da-dobijate-obaveštenja">
+                <input class="sest" type="radio" value="Ne" name="panel">
+                <span class="checkmark2"></span>
+            </label>
+
+            <h2>Ako je Vaš odgovor na prethodno pitanje DA, ukratko objasnite zašto želite da čujete panel diskusiju?
+            </h2>
+            <h3>prisustvo na panelu nije direktno povezano sa prijemom na radionice, s obzirom da je broj mesta
+                ograničen</h3>
+
+            <input name="zašto-da-za-panel" type="text" class="form-control">
+
+            <h2>U Slučaju da želite, možete nam priložiti link do svog CV-a:</h2>
+            <h3>FONIS će Vaš CV deliti isključivo sa IT partnerima organizacije, koji će imati pravo da kontaktiraju sa
+                Vama u slučaju prakse, posla ili sličnog. Vaš CV neće biti javno objavljen. U slučaju da želite da nam
+                ostavite svoj CV, potrebno je da ga postavite na Drajv po izboru (OneDrive, Google Drive, Dropbox...) i
+                da onda prosledite link do dokumenta.</h3>
+
+            <input name="link-do-CV" type="text" class="form-control">
+
+            <h2>Da li želite da dobijate obaveštenja o drugim FONIS projektima i slične vesti? <span
+                    class="star">*</span></h2>
+            <h3>Ovo podrazumeva da biste bili dodati na naš Newsletter, preko kojeg biste dobijali informacije o našim
+                dešavanjima, kao i o bitnim vestima iz sveta IT-a i događajima koje organizuju naši partneri i fakultet.
+                Vašem e-mailu će imati pristup isključivo FONIS i biće korišćen samo u svrhe koje smo prethodno opisali.
+                Možete se u bilo kom trenutku odjaviti sa Newsletter-a.</h3>
+
+            <label class="container">Da
+                <input class="sedam" type="radio" value="Da" name="da-li-želite-da-dobijate-obaveštenja">
+                <span class="checkmark2"></span>
+            </label>
+            <label class="container">Ne
+                <input class="sedam" type="radio" value="Ne" name="da-li-želite-da-dobijate-obaveštenja">
                 <span class="checkmark2"></span>
             </label>
 
@@ -247,7 +282,6 @@
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>
 
         function potvrda() {
@@ -263,7 +297,7 @@
 
         var prvi = '.jedan:checked';
 
-        function checkbox(ime) {
+        function checkbox(ime, id) {
             var list = document.querySelectorAll(ime);
             var tekst = "";
 
@@ -275,24 +309,14 @@
                     tekst = tekst.concat(', ', element.value);
                 }
             }
-            document.getElementById('projekat').value = tekst;
+            document.getElementById(id).value = tekst;
         }
 
-        // function proveraSelection(ime, vrednost){
-        //     var pocetna = document.getElementsByName(ime)[0].value;
-        //     if (pocetna == vrednost) {
-        //         return false;
-        //         }
-        //     else{
-        //         return true;
-        //     }
-        // }
-
-        function  proveraCheckbox(ime) {
+        function proveraCheckbox(ime) {
             var list = document.querySelectorAll(ime);
 
-            for(var element of list){
-                if(element.checked){
+            for (var element of list) {
+                if (element.checked) {
                     return true;
                 }
             }
@@ -309,26 +333,30 @@
                     break;
                 }
             }
-            if(gotovo){
+            if (gotovo) {
                 gotovo = proveraCheckbox('.jedan');
             }
-            if(gotovo){
+            if (gotovo) {
                 gotovo = proveraCheckbox('.dva');
             }
-            if(gotovo){
+            if (gotovo) {
                 gotovo = proveraCheckbox('.tri');
             }
-            if(gotovo){
+            if (gotovo) {
                 gotovo = proveraCheckbox('.cetiri');
             }
-            if(gotovo){
+            if (gotovo) {
                 gotovo = proveraCheckbox('.pet');
             }
-            if(gotovo){
+            if (gotovo) {
                 gotovo = proveraCheckbox('.sest');
             }
             if (gotovo) {
-                checkbox(prvi);
+                gotovo = proveraCheckbox('.sedam');
+            }
+            if (gotovo) {
+                checkbox(prvi, 'projekat');
+                checkbox('.cetiri:checked', 'radionice');
                 potvrda();
                 document.getElementById('dugme').style.display = 'none';
 
@@ -349,6 +377,48 @@
 
             }
         }
+
+        var limit = 2;
+        var selektovano = 0;
+
+        var x = document.getElementsByClassName("cetiri");
+
+        for (var i = 0; i < x.length; i++) {
+            x[i].addEventListener("change", function () {
+                if (this.checked) {
+                    if (selektovano >= limit) {
+                        this.checked = false;
+                    } else {
+                        selektovano++;
+                        if (selektovano == 1) {
+                            var string = ""
+                            var string = string.concat("Kojom ocenom biste ocenili zainteresovanost za radionicu ", "\"",
+                                this.value, "\"", "? Šta Vas je motivisalo da odaberete baš ovu radionicu?");
+                            document.getElementById("prviKurs").innerHTML = string;
+                        }
+                        if (selektovano == 2) {
+                            var string = ""
+                            var string = string.concat("Kojom ocenom biste ocenili zainteresovanost za radionicu ", "\"",
+                                this.value, "\"", "? Šta Vas je motivisalo da odaberete baš ovu radionicu?");
+                            document.getElementById("drugiKurs").innerHTML = string;
+                        }
+                    }
+                }
+                else {
+                    selektovano--;
+                    if (selektovano == 1) {
+                        document.getElementById("drugiKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za drugu čekiranu radionicu?\
+                         Šta Vas je motivisalo da odaberete baš ovu radionicu?"
+                    }
+                    if (selektovano == 0) {
+                        document.getElementById("prviKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za prvu čekiranu radionicu?\
+                         Šta Vas je motivisalo da odaberete baš ovu radionicu?"
+                    }
+                }
+
+            });
+        }
+
 
     </script>
 
