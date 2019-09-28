@@ -393,9 +393,12 @@ html {
 .kartica:hover
 .sestougao {
   top: 55px;
-  left: 10%;
+  /* left: 10%; */
   height: 50px;
   width: 200px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .kartica:hover
@@ -984,15 +987,9 @@ footer {
 @media only screen and (max-width: 813px) {
 .kartica:hover .sestougao {
     top: 55px;
-    left: 15%;
     height: 20px;
     width: 200px;	    
-    /* border-radius: 50%; */
   }
-
-  /* #radionice {
-    height: 1890px;
-  } */
 
  .kartica {
     height: 100%;
