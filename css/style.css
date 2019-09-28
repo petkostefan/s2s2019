@@ -507,12 +507,13 @@ html {
 }
 
 .popup_levo{
-  height: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 79vh;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: left;
   font-size: 0.8em;
   color: white;
+  min-width: 9vw;
 }
 
 .popup_levo h3{
@@ -521,9 +522,7 @@ html {
 }
 
 .popup_levo p{
-  padding-top: 20px;
-  padding-right: 25px;
-  padding-left: 10px;
+  padding: 20px;
 }
 
 .popup_desno {
@@ -573,19 +572,18 @@ html {
 
 .popupphoto {
   width: 18vw;
-  height: 35vw;
+  height: 79vh;
   left: 0px;
   padding-top: 15px;
-  padding-right: 20px;
-  min-width:18vw;
-  min-height: 30vw;
-  /* background:  rgb(60, 175, 228); */
 }
 
 .popupphoto img {
   height: 120px;
-  padding-left: 20%;
   padding-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .popuptext {
@@ -1023,35 +1021,39 @@ footer {
   }
 
   .popup {
-    transform: translate(0, -8vh);
-    height: 92vh;
+    /* transform: translate(0, -8vh); */
+    top: 55px;
+    height: 89vh;
   }
 
   .popup_desno{
-    height: 52vh;
+    height: 49vh;
     border-left: none;
     border-top: 3px solid white;
     margin-top: 5px;
+  }  
+  
+  .popupphoto, .popup_levo {
+    width: 75vw;   
+    height: 35vh;
+    /* min-height: 50vh; */
+    padding-top: 0;
+    padding-left: 10px;
   }
 
   .popupphoto img {
-    padding-left: 40%;
-    height: 60px;
+    height: 50px;
+    width: 45px;
+    background: #915c83;
+    padding-bottom: 0;
   }
   
   .predavac, .predavaci {
     margin-left: 25%;
   }
-  
-  .popupphoto {
-    width: 60vh;
-    min-height: 30vh;
-    height: 35vh;
-    padding-top: 0;
-  }
 
   .popupphoto > p {
-  padding-top: 20px;
+  padding-top: 10px;
   }
 
   .close {
