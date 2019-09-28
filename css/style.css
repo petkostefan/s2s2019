@@ -863,27 +863,30 @@ input:checked + label span:last-child {
 /**************** P A N E L ************************/
 #panel {
   padding-top: 100px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 #panel h2 {
   text-align: center;
   margin-top: 20px;
 }
 .panel-boxes-cont {
-  width: 1100px;
+  /* width: 1100px; */
   left: 50%;
   position: relative;
   margin-left: -550px;
 }
 #main-p {
   text-align: center;
-  padding: 30px 100px 30px 100px;
+  padding-top: 30px;
+  color: #636363;
 }
 .panel-containers {
   margin-left: 20px;
   height: 400px;
   width: 250px;
   display: inline-block;
-  padding: 20px;
+  /* padding: 10px; */
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 .img-circle {
@@ -1088,6 +1091,10 @@ footer {
 .section-h2 {
   font-size: 40px;
 }
+
+.part {
+  padding-bottom: 70px;
+}
 /********* responzivnost menija i pozadine *******************/
 @media only screen and (max-width: 800px) {
   #hamburger-icon {
@@ -1116,9 +1123,14 @@ footer {
   text-decoration: none;
   padding: 0;
   display: inline;
-  font-size: 18px;
+  font-size: 17px;
+  color: #06d8fd;
 }
 
 .accordion .content a::after {
   content: none;
+}
+
+.accordion .content a:hover {
+  color: #7288a2;
 }
