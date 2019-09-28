@@ -553,18 +553,22 @@ html {
   border-radius: 50%;
   height: 110px;
   width: 110px;
-  margin-left: 33%;
   margin-bottom: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .predavac {
-  margin-left: 41%; 
   margin-bottom: 10px;
   border-radius: 50%;
   height: 110px;
   width: 110px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #popup.show {
@@ -586,7 +590,6 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 .popuptext {
@@ -1042,10 +1045,6 @@ footer {
     height: 50px;
     width: 45px;
     padding-bottom: 0;
-  }
-  
-  .predavac, .predavaci {
-    margin-left: 25%;
   }
 
   .popupphoto > p {
