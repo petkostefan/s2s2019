@@ -1102,13 +1102,14 @@ footer {
 
 #tim {
   padding-top: 100px;
+  background-color: #e8eff5;
 }
 .section-h2 {
   font-size: 40px;
 }
 .part {
   padding-bottom: 70px;
-  background-color: #e8eff5;
+ /* background-color: #e8eff5;*/
 }
 /********* responzivnost menija i pozadine *******************/
 @media only screen and (max-width: 800px) {
