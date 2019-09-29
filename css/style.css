@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -780,8 +781,13 @@ input:checked + label span:last-child {
 }
 
 /********************** A G E N D A *************************/
+.cd-timeline.js-cd-timeline {
+  background-color:white;
+}
+.cd-timeline__content.text-component {
+  background-color: #e8eff5; 
+}
 #agenda {
-  background-color: #e8eff5;
   padding-bottom: 45px;
 }
 .cd-timeline h2 {
@@ -810,6 +816,7 @@ input:checked + label span:last-child {
   padding: 10px 20px 10px 20px;
   display: inline-block;
   cursor: pointer;
+  border: 1px solid#D0D0D0;
 }
 .subota,
 .nedelja {
@@ -1086,14 +1093,13 @@ footer {
 
 #tim {
   padding-top: 100px;
-  background-color: #e8eff5;
 }
 .section-h2 {
   font-size: 40px;
 }
-
 .part {
   padding-bottom: 70px;
+  background-color: #e8eff5;
 }
 /********* responzivnost menija i pozadine *******************/
 @media only screen and (max-width: 800px) {
