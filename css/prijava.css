@@ -300,9 +300,10 @@ h3{
   font-size: 15px;
 }
 
-.particles{
-  width: 0;
-  height: 0;
+.tooltiptext{
+  width: 90px;
+  padding: 5px 0;
+  margin-left: 5px;
 }
 
 }
