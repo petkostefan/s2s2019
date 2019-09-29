@@ -8,8 +8,15 @@ body{
         rgba(0, 93, 137),
         rgba(0, 93, 137)
     );
-    text-shadow: 2px 2px 5px #005d89;
   }
+
+#kolikoPuta{
+  display: none;
+}
+
+#kurs{
+  display: none;
+}
 
 textarea {
     resize: none;
@@ -40,25 +47,20 @@ h1{
     color: #ffa600;
     font-weight: 600;
   }
+  
+  h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 2px 2px 5px #005d89;
+  }
 
 h3{
     font-size: 15px;
     font-weight: 100;
     color: #fff;
-}
-
-h2 {
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-}
-
-h4 {
-    color: #ffa600;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    text-shadow: 2px 2px 5px #005d89;
 }
 
 .form-control
@@ -159,6 +161,7 @@ form .submit:hover
 
 label{
   font-weight: 200;
+  text-shadow: 1px 1px 5px #005d89;
 }
 
 .container {

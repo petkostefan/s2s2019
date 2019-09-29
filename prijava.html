@@ -106,26 +106,24 @@
             <h2>Da li ste ranije učestvovali na S2S-u? <span class="star">*</span></h2>
 
             <label class="container">Da
-                <input class="tri" type="radio" value="Da" name="da-li-ste-ranije-učestvovali">
+                <input id="da" class="tri" type="radio" value="Da" name="da-li-ste-ranije-učestvovali">
                 <span class="checkmark2"></span>
             </label>
             <label class="container">Ne
-                <input class="tri" type="radio" value="Ne" name="da-li-ste-ranije-učestvovali">
+                <input id="ne" class="tri" type="radio" value="Ne" name="da-li-ste-ranije-učestvovali">
                 <span class="checkmark2"></span>
             </label>
+            <div id="kolikoPuta">
+                <h2>Koliko ste do sada puta učestvovali? <span class="star">*</span></h2>
 
-            <h2>U slučaju da je odgovor na prethodno pitanje "Da", koliko ste do sada puta učestvovali? <span
-                    class="star">*</span></h2>
-
-            <select name="koliko-puta">
-                <option disabled selected value>- Koliko puta -</option>
-                <option value="prva">Nijednom</option>
-                <option value="prva">Jednom</option>
-                <option value="druga">Dvaput</option>
-                <option value="treca">Triput</option>
-                <option value="cetvrta">Četiri i više</option>
-            </select>
-
+                <select name="koliko-puta">
+                    <option disabled selected value>- Koliko puta -</option>
+                    <option value="prva">Jednom</option>
+                    <option value="druga">Dvaput</option>
+                    <option value="treca">Triput</option>
+                    <option value="cetvrta">Četiri i više</option>
+                </select>
+            </div>
             <h2>Odaberite najviše dve radionice na kojima biste želeli da učestvujete <span class="star">*</span></h2>
             <h3>Skrećemo Vam pažnju da zbog velikog interesovanja koje je svake godine prisutno za S2S, možda nećemo
                 biti u mogućnosti
@@ -137,67 +135,67 @@
             <label class="container">Data Science 101
                 <input class="cetiri" type="checkbox" value="Data Science 101">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 7/10 Laptop: Da
+                <span class="tooltiptext">Težina: 6/10 Laptop: Da
                 </span>
             </label>
             <label class="container">Intro to Java
                 <input class="cetiri" type="checkbox" value="Intro to Java">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 0/10 Laptop: Ne
+                <span class="tooltiptext">Težina: 3/10 Laptop: Ne
                 </span>
             </label>
 
             <label class="container">Real Time Data Processing
                 <input class="cetiri" type="checkbox" value="Real Time Data Processing">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 4/10 Laptop: Ne
+                <span class="tooltiptext">Težina: 5/10 Laptop: Da
                 </span>
             </label>
             <label class="container">Introduction to Graphic Design
                 <input class="cetiri" type="checkbox" value="Introduction to Graphic Design">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 2/10 Laptop: Ne
+                <span class="tooltiptext">Težina: 1/10 Laptop: Da
                 </span>
             </label>
 
             <label class="container">WebApp Workshop
                 <input class="cetiri" type="checkbox" value="WebApp Workshop">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 9/10 Laptop: Da
+                <span class="tooltiptext">Težina: 4/10 Laptop: Da
                 </span>
             </label>
             <label class="container">Vue is for you
                 <input class="cetiri" type="checkbox" value="Vue is for you">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 7/10 Laptop: Ne
+                <span class="tooltiptext">Težina: 4/10 Laptop: Ne
                 </span>
             </label>
 
             <label class="container">Sweet GIT
                 <input class="cetiri" type="checkbox" value="Sweet GIT">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 5/10 Laptop: Ne
+                <span class="tooltiptext">Težina: 3/10 Laptop: Da
                 </span>
             </label>
 
             <label class="container">Intro to Django
                 <input class="cetiri" type="checkbox" value="Intro to Django">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 4/10 Laptop: Da
+                <span class="tooltiptext">Težina: 5/10 Laptop: Ne
                 </span>
             </label>
 
             <label class="container">Intro to C
                 <input class="cetiri" type="checkbox" value="Intro to C">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 2/10 Laptop: Ne
+                <span class="tooltiptext">Težina: 3/10 Laptop: Ne
                 </span>
             </label>
 
             <label class="container">Kroz bazu do Jave
                 <input class="cetiri" type="checkbox" value="Kroz bazu do Jave">
                 <span class="checkmark"></span>
-                <span class="tooltiptext">Težina: 8/10 Laptop: Da
+                <span class="tooltiptext">Težina: 5/10 Laptop: Ne
                 </span>
             </label>
 
@@ -210,12 +208,14 @@
 
             <input id="aaa" name="zašto-ste-izabrali-prvi-kurs" type="text" class="form-control aaa">
 
-            <h2 id="drugiKurs">Kojom ocenom biste ocenili zainteresovanost za drugu čekiranu radionicu? Šta Vas je
-                motivisalo da odaberete baš ovu radionicu?</h2>
-            <h3>Želimo da čujemo Vaš cilj, motiv i ideju sa kojom se prijavljujete baš za odabranu radionicu. Zašto
-                ste baš Vi pravi delegat za odabranu temu?</h3>
+            <div id="kurs">
+                <h2 id="drugiKurs">Kojom ocenom biste ocenili zainteresovanost za drugu čekiranu radionicu? Šta Vas je
+                    motivisalo da odaberete baš ovu radionicu?</h2>
+                <h3>Želimo da čujemo Vaš cilj, motiv i ideju sa kojom se prijavljujete baš za odabranu radionicu. Zašto
+                    ste baš Vi pravi delegat za odabranu temu?</h3>
 
-            <input name="zašto-ste-izabrali-drugi-kurs" type="text" class="form-control">
+                <input name="zašto-ste-izabrali-drugi-kurs" type="text" class="form-control">
+            </div>
 
             <h2>Šta očekujete od ovog projekta? <span class="star">*</span></h2>
 
