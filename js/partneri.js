@@ -3,7 +3,7 @@ new Glide('.glide', {
     type: 'carousel',
     startAt: 0,
     hoverpause: false,
-    perView: 4,
+    perView: 3,
     direction: 'rtl',
     breakpoints:{
       1024: {
