@@ -129,11 +129,13 @@ for (var i = 0; i < x.length; i++) {
                 document.getElementById("kurs").style.display = "none";
 
                 if (this.value == indeksPrvi) {
+                    indeksPrvi = indeksDrugi;
                     document.getElementById("drugiKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za drugu čekiranu radionicu?\
                     Šta Vas je motivisalo da odaberete baš ovu radionicu?"
 
                     document.getElementById("prviKurs").innerHTML = drugiString;
                     drugiString = "";
+                    indeksDrugi ="";
                 }
                 else {
                     drugiString = "";
