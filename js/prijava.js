@@ -40,7 +40,7 @@ function proveraCheckbox(ime) {
 function prijava() {
     var gotovo = true;
     var list = document.querySelectorAll('.aaa');
-    
+
     for (var element of list) {
         if (element.value == "") {
             gotovo = false;
@@ -95,6 +95,8 @@ document.getElementById("ne").addEventListener("change", function () {
 var limit = 2;
 var selektovano = 0;
 var drugiString = "";
+var indeksPrvi;
+var indeksDrugi;
 
 var x = document.getElementsByClassName("cetiri");
 
@@ -105,16 +107,18 @@ for (var i = 0; i < x.length; i++) {
                 this.checked = false;
             } else {
                 selektovano++;
-                // if (selektovano == 1) {
-                //     var string = "";
-                //     var string = string.concat("Kojom ocenom biste ocenili zainteresovanost za radionicu ", "\"",
-                //         this.value, "\"", "? Šta Vas je motivisalo da odaberete baš ovu radionicu?");
-                //     document.getElementById("prviKurs").innerHTML = string;
-                // }
+                if (selektovano == 1) {
+                    indeksPrvi = this.value;
+                    var string = "";
+                    var string = string.concat("Kojom ocenom biste ocenili zainteresovanost za radionicu ", "\"",
+                        this.value, "\"", "? Šta Vas je motivisalo da odaberete baš ovu radionicu?");
+                    document.getElementById("prviKurs").innerHTML = string;
+                }
                 if (selektovano == 2) {
-                    // drugiString = drugiString.concat("Kojom ocenom biste ocenili zainteresovanost za radionicu ", "\"",
-                    //     this.value, "\"", "? Šta Vas je motivisalo da odaberete baš ovu radionicu?");
-                    // document.getElementById("drugiKurs").innerHTML = drugiString;
+                    indeksDrugi = this.value;
+                    drugiString = drugiString.concat("Kojom ocenom biste ocenili zainteresovanost za radionicu ", "\"",
+                        this.value, "\"", "? Šta Vas je motivisalo da odaberete baš ovu radionicu?");
+                    document.getElementById("drugiKurs").innerHTML = drugiString;
                     document.getElementById("kurs").style.display = "block";
                 }
             }
@@ -123,16 +127,22 @@ for (var i = 0; i < x.length; i++) {
             selektovano--;
             if (selektovano == 1) {
                 document.getElementById("kurs").style.display = "none";
-                // document.getElementById("drugiKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za drugu čekiranu radionicu?\
-                //          Šta Vas je motivisalo da odaberete baš ovu radionicu?"
 
-                // document.getElementById("prviKurs").innerHTML = drugiString;
-                // drugiString = "";
+                if (this.value == indeksPrvi) {
+                    document.getElementById("drugiKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za drugu čekiranu radionicu?\
+                    Šta Vas je motivisalo da odaberete baš ovu radionicu?"
+
+                    document.getElementById("prviKurs").innerHTML = drugiString;
+                    drugiString = "";
+                }
+                else {
+                    drugiString = "";
+                }
             }
-            // if (selektovano == 0) {
-            //     document.getElementById("prviKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za prvu čekiranu radionicu?\
-            //              Šta Vas je motivisalo da odaberete baš ovu radionicu?"
-            // }
+            if (selektovano == 0) {
+                document.getElementById("prviKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za prvu čekiranu radionicu?\
+                         Šta Vas je motivisalo da odaberete baš ovu radionicu?"
+            }
         }
 
     });
