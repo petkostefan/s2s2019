@@ -110,13 +110,13 @@ for (var i = 0; i < x.length; i++) {
                 if (selektovano == 1) {
                     indeksPrvi = this.value;
                     var string = "";
-                    var string = string.concat("Kojom ocenom biste ocenili zainteresovanost za radionicu ", "\"",
+                    var string = string.concat("Kojom ocenom (1─10) biste ocenili svoju zainteresovanost za radionicu ", "\"",
                         this.value, "\"", "? Šta Vas je motivisalo da odaberete baš ovu radionicu?");
                     document.getElementById("prviKurs").innerHTML = string;
                 }
                 if (selektovano == 2) {
                     indeksDrugi = this.value;
-                    drugiString = drugiString.concat("Kojom ocenom biste ocenili zainteresovanost za radionicu ", "\"",
+                    drugiString = drugiString.concat("Kojom ocenom (1─10) biste ocenili svoju zainteresovanost za radionicu ", "\"",
                         this.value, "\"", "? Šta Vas je motivisalo da odaberete baš ovu radionicu?");
                     document.getElementById("drugiKurs").innerHTML = drugiString;
                     document.getElementById("kurs").style.display = "block";
@@ -130,7 +130,7 @@ for (var i = 0; i < x.length; i++) {
 
                 if (this.value == indeksPrvi) {
                     indeksPrvi = indeksDrugi;
-                    document.getElementById("drugiKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za drugu čekiranu radionicu?\
+                    document.getElementById("drugiKurs").innerHTML = "Kojom ocenom (1─10) biste ocenili svoju zainteresovanost za drugu čekiranu radionicu?\
                     Šta Vas je motivisalo da odaberete baš ovu radionicu?"
 
                     document.getElementById("prviKurs").innerHTML = drugiString;
@@ -142,7 +142,7 @@ for (var i = 0; i < x.length; i++) {
                 }
             }
             if (selektovano == 0) {
-                document.getElementById("prviKurs").innerHTML = "Kojom ocenom biste ocenili zainteresovanost za prvu čekiranu radionicu?\
+                document.getElementById("prviKurs").innerHTML = "Kojom ocenom biste (1─10) ocenili svoju zainteresovanost za prvu čekiranu radionicu?\
                          Šta Vas je motivisalo da odaberete baš ovu radionicu?"
             }
         }
